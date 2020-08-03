@@ -1,0 +1,11 @@
+<div id="tags" class="container">
+    <br>
+    <h1>Sebastian Glahn is writing about:</h1>
+    <p>
+    {% for category in site.categories %}
+    <a class="label" href="/tags/{{ category | first | slugify }}/">
+        {{ category | first }}
+    </a>
+    {% endfor %}
+    </p>
+</div>
