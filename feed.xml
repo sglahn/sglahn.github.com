@@ -1,0 +1,1262 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.7">Jekyll</generator><link href="https://blog.tldnr.org/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.tldnr.org/" rel="alternate" type="text/html" /><updated>2020-08-04T11:30:20+00:00</updated><id>https://blog.tldnr.org/feed.xml</id><title type="html">tl;dnr</title><subtitle>The personal Blog of Sebastian Glahn
+</subtitle><author><name>Sebastian Glahn</name></author><entry><title type="html">Prototyping Stand With Integrated Power Supply</title><link href="https://blog.tldnr.org/2020/06/09/prototyping-stand/" rel="alternate" type="text/html" title="Prototyping Stand With Integrated Power Supply" /><published>2020-06-09T06:00:00+00:00</published><updated>2020-06-09T06:00:00+00:00</updated><id>https://blog.tldnr.org/2020/06/09/prototyping-stand</id><content type="html" xml:base="https://blog.tldnr.org/2020/06/09/prototyping-stand/">&lt;p&gt;&lt;img src=&quot;/images/2020/breadboard-done.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;motivation&quot;&gt;Motivation&lt;/h1&gt;
+&lt;p&gt;I wanted to tidy up my workbench, so I decided to build a prototyping stand for my electronic projects. 
+A big advantage of this is that you can carry the projects around without breaking them.
+I also want to use it to teach my kids electronics.
+That is why it must be easy to use and look nice.&lt;/p&gt;
+
+&lt;p&gt;The prototyping stand has an integrated power supply which supplys 3.3V and 5V.
+It has enough space to work comfortable because it features two breadboards.
+And it features banana sockets because they look cool.&lt;/p&gt;
+
+&lt;h1 id=&quot;parts-needed&quot;&gt;Parts needed&lt;/h1&gt;
+&lt;p&gt;&lt;img src=&quot;/images/2020/breadboard-parts-needed.jpg&quot; alt=&quot;&quot; /&gt;
+The power supply is an cheap hw-131 board (2,50€ on eBay) which has short circuit protection.
+Apart from that&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;some M3 screws and nuts&lt;/li&gt;
+  &lt;li&gt;four banana sockets&lt;/li&gt;
+  &lt;li&gt;two breadboards&lt;/li&gt;
+  &lt;li&gt;an on/off switch&lt;/li&gt;
+  &lt;li&gt;a green LED&lt;/li&gt;
+  &lt;li&gt;a 9V battery and a battery cable 
+are needed.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;3d-printed-parts&quot;&gt;3D Printed Parts&lt;/h1&gt;
+&lt;p&gt;&lt;img src=&quot;/images/2020/breadboard-printed-parts.jpg&quot; alt=&quot;&quot; /&gt;
+The stand consists of four 3d printed parts which I designed with Fusion 360.
+I printed the parts with 50% infill to achive the appropriate strenght.
+I also used two different colors.
+The parts can be downloaded here:&lt;/p&gt;
+
+&lt;p&gt;The &lt;a href=&quot;/assets/stl/breadboardstand-front.stl&quot;&gt;front&lt;/a&gt;:&lt;/p&gt;
+&lt;div class=&quot;stl-model&quot; data-file=&quot;/assets/stl/breadboardstand-front.stl&quot;&gt;&lt;/div&gt;
+&lt;p&gt;The &lt;a href=&quot;/assets/stl/breadboardstand-left.stl&quot;&gt;left side&lt;/a&gt; with the battery holder:&lt;/p&gt;
+&lt;div class=&quot;stl-model&quot; data-file=&quot;/assets/stl/breadboardstand-left.stl&quot;&gt;&lt;/div&gt;
+&lt;p&gt;The &lt;a href=&quot;/assets/stl/breadboardstand-right.stl&quot;&gt;right side&lt;/a&gt;:&lt;/p&gt;
+&lt;div class=&quot;stl-model&quot; data-file=&quot;/assets/stl/breadboardstand-right.stl&quot;&gt;&lt;/div&gt;
+&lt;p&gt;The &lt;a href=&quot;/assets/stl/breadboardstand-top.stl&quot;&gt;top&lt;/a&gt; with the holes for the banana sockets, power switch and more:&lt;/p&gt;
+&lt;div class=&quot;stl-model&quot; data-file=&quot;/assets/stl/breadboardstand-top.stl&quot;&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;assembly&quot;&gt;Assembly&lt;/h1&gt;
+&lt;p&gt;The first step of the assembly is to unsolder the build in green power LED from the hw-131 board. 
+The LED is replaced by a bigger one on top of the prototyping stand.
+&lt;img src=&quot;/images/2020/breadboard-unsolder.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Next, the hw-131 board is sticked in the holes (marked red) at the bottom of the 3d printed “top” part, no gluing necessary.
+The holes are so small that the hw-131 board sits very tight.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/2020/breadboard-power1.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;/images/2020/breadboard-power2.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Then, the power switch can be soldered to the battery and the hw-131 power supply with some cables.
+&lt;img src=&quot;/images/2020/breadboard-power-supply.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The next step is to solder the new power LED to the hw-131 board.
+The new LED uses the same connections as the old, unsolderd LED.
+The new LED is glued to the printed “top” part with plastic glue.
+&lt;img src=&quot;/images/2020/breadboard-led.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;A test: When the on/off switch is toggled, the LED lights up!
+&lt;img src=&quot;/images/2020/breadboard-led2.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Add banana sockets to the “top” part.
+&lt;img src=&quot;/images/2020/breadboard-banana.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The last step: Solder the banana sockets to the hw-131 power supply.
+&lt;img src=&quot;/images/2020/breadboard-banana2.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Happy prototyping!
+&lt;img src=&quot;/images/2020/breadboard.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name>Sebastian Glahn</name></author><category term="3D-Printing" /><category term="Microcontroller" /><summary type="html"></summary></entry><entry><title type="html">Building a Digital Slot Car Lap Counter</title><link href="https://blog.tldnr.org/2020/05/08/slot-car-lap-counter/" rel="alternate" type="text/html" title="Building a Digital Slot Car Lap Counter" /><published>2020-05-08T06:00:00+00:00</published><updated>2020-05-08T06:00:00+00:00</updated><id>https://blog.tldnr.org/2020/05/08/slot-car-lap-counter</id><content type="html" xml:base="https://blog.tldnr.org/2020/05/08/slot-car-lap-counter/">&lt;p&gt;&lt;img src=&quot;/images/2020/lap-counter-endless.gif&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Having some Carrera Go slot car racing sets at home I always regarded the included analog lap counters as kind of boring. 
+I wanted to build a better lap counter with more functionality and which makes playing with a Carrera Go racing set feel more like an actual race. 
+For me the included lap counters are missing a basic feature: Tracking the lap time.&lt;/p&gt;
+
+&lt;p&gt;The first idea was to use an ESP8266 and to make use of the WIFI capabilities (e.g. displaying lap times and speed on a website and having the possibliltity to make firmeware updates “over the air”). 
+But after a second thought I came to the conclusion that it would also mean more complexitity and that the possiblity of OTA firmware updates would open the door to an never-ending project.
+I wanted kind of a finished product not an “always-beta” proof of concept. Something that just works and is easy to use, also for children.&lt;/p&gt;
+
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#features&quot; id=&quot;markdown-toc-features&quot;&gt;Features&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#parts-needed&quot; id=&quot;markdown-toc-parts-needed&quot;&gt;Parts needed&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#schematic&quot; id=&quot;markdown-toc-schematic&quot;&gt;Schematic&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#bom&quot; id=&quot;markdown-toc-bom&quot;&gt;BOM&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#3d-printed-enclosure&quot; id=&quot;markdown-toc-3d-printed-enclosure&quot;&gt;3D Printed Enclosure&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#digital-distance-sensors&quot; id=&quot;markdown-toc-digital-distance-sensors&quot;&gt;Digital Distance Sensors&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#4-digit-7-segment-displays&quot; id=&quot;markdown-toc-4-digit-7-segment-displays&quot;&gt;4-Digit 7-Segment Displays&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#assembly&quot; id=&quot;markdown-toc-assembly&quot;&gt;Assembly&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#software&quot; id=&quot;markdown-toc-software&quot;&gt;Software&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#conclusion&quot; id=&quot;markdown-toc-conclusion&quot;&gt;Conclusion&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;features&quot;&gt;Features&lt;/h2&gt;
+&lt;p&gt;Here is the feature list of my &lt;em&gt;advanced&lt;/em&gt; Carrera Go lap counter:&lt;/p&gt;
+
+&lt;p&gt;The lap counter features an on/off switch to, obviously, power it on or off.
+There are three buttons on the top, two white and one red. 
+The buttons can be used to go through the “menu” and set, e.g. the number of laps for a race.
+In this case the white buttons are acting like + and - and can be used to increase or decrease the number of laps.
+The red button starts the actual race.
+Here is the lap counter in action:
+&lt;img src=&quot;/images/2020/config_mode.gif&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;When a fixed number of laps is selected and the red button is pressed, the race begins with the starting lights. 
+The starting lights are three LEDs in red, yellow and green.
+When the green LED is off the time tracking starts.
+Each time a car passes the sensor the lap is counted.
+&lt;img src=&quot;/images/2020/fixed_race.gif&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;When the first player has finished all laps off the current race the race result will be displayed and the race is over.
+With a press on the red button the next race can be started.
+&lt;img src=&quot;/images/2020/result.gif&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;When the current lap was the fasted lap of the actual race the lap counter displays the record.
+It is also possible to use the lap counter without a fixed number of laps. This is the “Free Race” mode. This mode works more or less like tracking the laps with the old analogue lap counters that came with the Carrera Go sets but with additional time tracking.
+&lt;img src=&quot;/images/2020/start_free_mode.gif&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;parts-needed&quot;&gt;Parts needed&lt;/h2&gt;
+
+&lt;h3 id=&quot;schematic&quot;&gt;Schematic&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;/images/2020/lap-counter-layout.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The lap counter uses an &lt;a href=&quot;https://store.arduino.cc/arduino-micro&quot;&gt;“Arduino Micro”&lt;/a&gt; microcontroller board.
+The main reason for choosing this board was the small form factor (48mm x 18mm) and it’s 20 digital input and output pins which makes it possible to connect a lot of things to it.
+Anyway, in the end, I only needed 10 pins. The Micro also supports I2C and interrupts, which I also needed.&lt;/p&gt;
+
+&lt;p&gt;Later I found out that the &lt;a href=&quot;https://platformio.org/platformio-ide&quot;&gt;“PlatformIO IDE”&lt;/a&gt;, which I use to program microcontroller boards, does not work well with the Arduino Micro. 
+Basically, it was not possible for me to upload code to the board without an error, not even once. 
+I guess the problems are connected to the Micro’s virtual serial port and the way the board detects an upload.
+It was a matter of luck if an upload succeded and it always took me multiple tries. 
+It was tedious.&lt;/p&gt;
+
+&lt;p&gt;Apart from the Arduino Micro the main parts where the Displays and the Sensors.&lt;/p&gt;
+
+&lt;h3 id=&quot;bom&quot;&gt;BOM&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;1x Arduino Micro&lt;/li&gt;
+  &lt;li&gt;2x Sharp GP2Y0D805Z0F Digital Distance Sensor 5cm&lt;/li&gt;
+  &lt;li&gt;1x Adafruit 0.56” 4-Digit 7-Segment Display with I2C Backpack - Green&lt;/li&gt;
+  &lt;li&gt;1x Adafruit 0.56” 4-Digit 7-Segment Display with I2C Backpack - Yellow&lt;/li&gt;
+  &lt;li&gt;3x Momentary Mini Push Buttons&lt;/li&gt;
+  &lt;li&gt;1x Mini Toggle Switch&lt;/li&gt;
+  &lt;li&gt;LEDs, Resistors, Wire, Screws, …&lt;/li&gt;
+  &lt;li&gt;1x 3D printed enclosure&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;3d-printed-enclosure&quot;&gt;3D Printed Enclosure&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;/images/2020/lap-counter-fusion-front.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;/images/2020/lap-counter-fusion-back.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;/images/2020/lap-counter-print-front1+2.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;/images/2020/lap-counter-print-back.jpg&quot; alt=&quot;&quot; /&gt;
+I designed an enclosure with Fusion360 and printed it with my 3d printer.&lt;/p&gt;
+
+&lt;h2 id=&quot;digital-distance-sensors&quot;&gt;Digital Distance Sensors&lt;/h2&gt;
+&lt;p&gt;The Sharp GP2Y0D805Z0F Digital Distance Sensors are very fast and accurate. 
+They are placed in the enclosure above the track facing downwards. 
+The data pins of the sensors are connected to the Micro’s interrupt pins 0 and 1.
+In the firmware he code defines two interrupt handlers via &lt;em&gt;attachInterrupt&lt;/em&gt; and it looks more ore less like this:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-c&quot; data-lang=&quot;c&quot;&gt;&lt;span class=&quot;k&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;byte&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sensorPinPlayerA&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;...&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Player&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;public:&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;volatile&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;unsigned&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ticks&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;...&lt;/span&gt;
+&lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;tickPlayerA&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;playerA&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ticks&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;...&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;attachInterrupt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;digitalPinToInterrupt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sensorPinPlayerA&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tickPlayerA&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;CHANGE&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;...&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h2 id=&quot;4-digit-7-segment-displays&quot;&gt;4-Digit 7-Segment Displays&lt;/h2&gt;
+&lt;p&gt;The Adafruit 0.56” 4-Digit 7-Segment displays are connected via I2C on the Micro’s I2C pins 2 (SDA) and 3 (SCL).&lt;/p&gt;
+
+&lt;p&gt;Adafruit has some &lt;a href=&quot;https://learn.adafruit.com/adafruit-led-backpack/0-dot-56-seven-segment-backpack-assembly&quot;&gt;documentation&lt;/a&gt; on how to get started and an &lt;a href=&quot;https://github.com/adafruit/Adafruit_LED_Backpack&quot;&gt;Arduino library&lt;/a&gt; to control the displays.
+The library makes it easy to display numbers but also allows via 8 bit bitmasks to set individual segments to turn on or off. This is really useful for creating your own characters.
+This is how it looks in the firmware:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-c&quot; data-lang=&quot;c&quot;&gt;&lt;span class=&quot;cp&quot;&gt;#include &amp;lt;Wire.h&amp;gt;
+#include &amp;lt;SPI.h&amp;gt;
+#include &amp;lt;Adafruit_GFX.h&amp;gt;
+#include &quot;Adafruit_LEDBackpack.h&quot;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;...&lt;/span&gt;
+
+&lt;span class=&quot;cp&quot;&gt;#define DISPLAY_A_ADDRESS 0x70
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;...&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;Adafruit_7segment&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;display&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Adafruit_7segment&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;...&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;display&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;begin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;DISPLAY_A_ADDRESS&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;...&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;display&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;blinkRate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h2 id=&quot;assembly&quot;&gt;Assembly&lt;/h2&gt;
+&lt;p&gt;The first thing I did was to install the LEDs for the racing lights in the enclosure.
+I cutted the shorter leg of the LEDs even shorter and soldered an resistor to each. 
+Then I fixed the LEDs in the enclosure with adhesive and bended the long legs (the ones without the resistor) together, so that I could solder a wire to all three of them. 
+Finally I soldered the wires onto the Arduino Micro (pins: 10, 11, 12).
+Here are some pictures of the process:
+&lt;img src=&quot;/images/2020/lap-counter-led-resistor.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;/images/2020/lap-counter-led1.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;/images/2020/lap-counter-led2.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;After that, I installed the displays, sensors, buttons and the power switch in the front part of the housing and the battery and the Arduino Micro in the back part. 
+&lt;img src=&quot;/images/2020/lap-counter-assembly1.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;/images/2020/lap-counter-assembly2.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I soldered the power switch with wires to the battery and the Micro’s Vin and Ground Pins.
+&lt;img src=&quot;/images/2020/lap-counter-assembly3.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Then it really started to get complicated. 
+I soldered the sensors and the displays to the Micro using two additional boards for all the + and - wires.
+I realized then, that perhaps this huge amount of cable won’t fit into the enclosure.
+&lt;img src=&quot;/images/2020/lap-counter-assembly4.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;/images/2020/lap-counter-assembly7.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;That’s why I added hot glue to the soldered connections to protect them from the pulling force that occured when I finally tried to close the enclosure.
+&lt;img src=&quot;/images/2020/lap-counter-assembly9.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;But somehow, with a lot of patience, I managed to stuff everything into the housing.
+&lt;img src=&quot;/images/2020/lap-counter-complete.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;software&quot;&gt;Software&lt;/h2&gt;
+
+&lt;p&gt;I will problaly never publish the code because it is a mess and I’d have to invest a lot of time to clean it up.&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;Building the lap counter was a lot of fun and I learned a lot about designing an enclosure for electronics.
+It is not the prettiest one but it is a functional design and it works for me.&lt;/p&gt;</content><author><name>Sebastian Glahn</name></author><category term="3D-Printing" /><category term="Microcontroller" /><category term="Coding" /><summary type="html"></summary></entry><entry><title type="html">OpenWrt: Randomizing Guest WIFI Passwords</title><link href="https://blog.tldnr.org/2019/11/11/Guest-Wifi/" rel="alternate" type="text/html" title="OpenWrt: Randomizing Guest WIFI Passwords" /><published>2019-11-11T06:00:00+00:00</published><updated>2019-11-11T06:00:00+00:00</updated><id>https://blog.tldnr.org/2019/11/11/Guest-Wifi</id><content type="html" xml:base="https://blog.tldnr.org/2019/11/11/Guest-Wifi/">&lt;p&gt;We have a guest wifi at home for everyone to use. With a growing number of people knowing the password to the wifi I wanted to change it on a regular basis.
+Rather than manually coming up with a suitable random password all the time, I wanted to automate the process of generating and setting a new password and make the password easy accessible for our guests at the same time.&lt;/p&gt;
+
+&lt;p&gt;I’m using an Linksys WRT-1900 AC wifi router with a custom firmware called OpenWrt which is an open source embedded operating system based on Linux.
+OpenWrt allows the installation of additional software and it is even equipped with a package manager. 
+It also allows SSH and root access to the router.&lt;/p&gt;
+
+&lt;p&gt;There are a lot of guides online on how to &lt;a href=&quot;https://openwrt.org/docs/guide-user/network/wifi/guestwifi/guest-wlan-webinterface&quot;&gt;configure a guest wifi&lt;/a&gt; in OpenWrt so I won’t cover it here.&lt;/p&gt;
+
+&lt;h1 id=&quot;randomize-the-passwords&quot;&gt;Randomize the Passwords&lt;/h1&gt;
+&lt;p&gt;I wrote a little bash script which generates a new random password for the guest wifi and restarts it. The script is meant to run on the router itself. It is nothing fancy but it works.&lt;/p&gt;
+
+&lt;p&gt;The password is constructed out of the uppercase characters &lt;em&gt;ABCDEFGHJKLMNPQRSTUVWXYZ&lt;/em&gt;, the lowercase characters &lt;em&gt;abcdefghjklmnpqrstuvwxyz&lt;/em&gt;, the digits &lt;em&gt;23456789&lt;/em&gt; and the special characters &lt;em&gt;_-&lt;/em&gt;. It has a length of 12. 
+The characters I and O and the numbers 1 and 0 are left out because it is always hard to keep them apart.&lt;/p&gt;
+
+&lt;p&gt;The password is written into a file called &lt;em&gt;.guest_password.txt&lt;/em&gt; which is located in the home directory of the root user.&lt;/p&gt;
+
+&lt;p&gt;After the password is written to the text file the script calls a very handy tool called &lt;em&gt;qrencode&lt;/em&gt;. Qrencode is used to create an SVG image with a QR Code containing the SSID, the security mode and the new created password. 
+Later this QR Code can be scanned by a smartphone to directly connect to the wifi network.
+Qrencode can be installed with the help of the OpenWrt package manager called Opkg via &lt;em&gt;opkg install qrencode&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;The QR Code is saved to file called &lt;em&gt;wifi.svg&lt;/em&gt; in the &lt;em&gt;/www&lt;/em&gt; folder.&lt;/p&gt;
+
+&lt;p&gt;Afterwards the script restarts the wifi with the help of OpenWrts configuration management system &lt;a href=&quot;https://openwrt.org/docs/guide-user/base-system/uci&quot;&gt;UCI&lt;/a&gt;. 
+The complete script is shown below, it is also located in the home folder of the root user.&lt;/p&gt;
+
+&lt;p&gt;~/rotate_guest_wifi_password.sh&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;c&quot;&gt;#!/bin/bash&lt;/span&gt;
+
+&lt;span class=&quot;nv&quot;&gt;password&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;sb&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cat&lt;/span&gt; /dev/urandom | &lt;span class=&quot;nb&quot;&gt;env &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;LC_CTYPE&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;C &lt;span class=&quot;nb&quot;&gt;tr&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-dc&lt;/span&gt; _ABCDEFGHJKLMNPQRSTUVWXYZabcdefghjklmnpqrstuvwxyz23456789- | &lt;span class=&quot;nb&quot;&gt;head&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-c&lt;/span&gt; 12&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;sb&quot;&gt;`&lt;/span&gt;
+
+&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$password&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; /root/.guest_password.txt
+
+&lt;span class=&quot;nv&quot;&gt;ssid&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;123456_Guest
+&lt;span class=&quot;nv&quot;&gt;security&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;WPA
+qrencode &lt;span class=&quot;nt&quot;&gt;-o&lt;/span&gt; /www/wifi.svg &lt;span class=&quot;s2&quot;&gt;&quot;WIFI:S:&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;${&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;ssid&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;;T:&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;${&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;security&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;;P:&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;${&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;password&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;;;&quot;&lt;/span&gt; 
+
+&lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;i &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;0..2&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do
+    if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;sb&quot;&gt;`&lt;/span&gt;uci get wireless.@wifi-iface[&lt;span class=&quot;nv&quot;&gt;$i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;.network&lt;span class=&quot;sb&quot;&gt;`&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'guest'&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;then
+        &lt;/span&gt;uci &lt;span class=&quot;nb&quot;&gt;set &lt;/span&gt;wireless.@wifi-iface[&lt;span class=&quot;nv&quot;&gt;$i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;.key&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$password&lt;/span&gt;
+        uci commit wireless
+        wifi
+    &lt;span class=&quot;k&quot;&gt;fi
+done&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h1 id=&quot;add-a-cron-job&quot;&gt;Add a Cron Job&lt;/h1&gt;
+&lt;p&gt;Now all that has to be done is to call this script on a regular basis.
+I’m using a cron job on the router to call the above script once a month to reset the password and the wifi. 
+So now, every first of the month a new password and a new QR Code will be generated and the wifi restarted.&lt;/p&gt;
+
+&lt;p&gt;Crontab&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;➜ crontab &lt;span class=&quot;nt&quot;&gt;-l&lt;/span&gt;
+1 0 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; 1 /root/rotate_guest_wifi_password.sh&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h1 id=&quot;setup-the-website&quot;&gt;Setup the Website&lt;/h1&gt;
+&lt;p&gt;Now we need a way to show the current password to our guests so that they can login to our wifi.
+I’m using a CGI script on the router itself to generate a rudimentary webpage and display the SSID, the current password and the QR Code image.
+The CGI script greps the password from the text file in the home directory of the root user and the QR Code file from the /www folder and delivers it to the client.
+The webpage will also reload itself every hour.&lt;/p&gt;
+
+&lt;p&gt;Below is the script which is located in the folder &lt;em&gt;/www/cgi-bin&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;/www/cgi-bin/guest_password&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;c&quot;&gt;#!/bin/bash&lt;/span&gt;
+
+&lt;span class=&quot;nv&quot;&gt;password&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;$(&lt;/span&gt;&amp;lt;/root/.guest_password.txt&lt;span class=&quot;si&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Content-Type: text/html&quot;&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&quot;&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&amp;lt;!DOCTYPE html&amp;gt;&quot;&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&amp;lt;html lang=&quot;en-US&quot;&amp;gt;'&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&amp;lt;head&amp;gt;&quot;&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&amp;lt;title&amp;gt;Guest Password&amp;lt;/title&amp;gt;&quot;&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&amp;lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0&quot;&amp;gt;'&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&amp;lt;meta http-equiv=&quot;refresh&quot; content=&quot;360&quot; /&amp;gt;'&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&amp;lt;/head&amp;gt;&quot;&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&amp;lt;body bgcolor=&quot;#000&quot;&amp;gt;'&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&amp;lt;div style='text-align:center;color:#fff;font-family:UnitRoundedOT,Helvetica Neue,Helvetica,Arial,sans-serif;font-size:28px;font-weight:500;'&amp;gt;&quot;&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&amp;lt;h1&amp;gt;Guest WIFI&amp;lt;/h1&amp;gt;&quot;&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&amp;lt;p&amp;gt;SSID: &amp;lt;b&amp;gt;123456_Guest&amp;lt;/b&amp;gt;&amp;lt;/p&amp;gt;&quot;&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&amp;lt;p&amp;gt;PASSWORD: &amp;lt;b&amp;gt;&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$password&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;lt;/b&amp;gt;&amp;lt;/p&amp;gt;&quot;&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&amp;lt;img src=../wifi.svg style=&quot;width:50%&quot;&amp;gt;&amp;lt;/img&amp;gt;&amp;lt;br&amp;gt;'&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&amp;lt;/div&amp;gt;&quot;&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&amp;lt;/body&amp;gt;&quot;&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&amp;lt;/html&amp;gt;&quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;And here is the very basic website displaying the wifi credentials:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/2019/guest-wifi.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;summary&quot;&gt;Summary&lt;/h1&gt;
+&lt;p&gt;The setup is very stable and has run for a couple of month now without a problem. 
+The most usefull thing is the QR Code because there is no need to type a password anymore.&lt;/p&gt;</content><author><name>Sebastian Glahn</name></author><category term="Command-Line" /><summary type="html">We have a guest wifi at home for everyone to use. With a growing number of people knowing the password to the wifi I wanted to change it on a regular basis. Rather than manually coming up with a suitable random password all the time, I wanted to automate the process of generating and setting a new password and make the password easy accessible for our guests at the same time.</summary></entry><entry><title type="html">Custom 3D Printer Enclosure Build</title><link href="https://blog.tldnr.org/2019/07/13/Kossel-Enclosure-Build/" rel="alternate" type="text/html" title="Custom 3D Printer Enclosure Build" /><published>2019-07-13T04:00:26+00:00</published><updated>2019-07-13T04:00:26+00:00</updated><id>https://blog.tldnr.org/2019/07/13/Kossel-Enclosure-Build</id><content type="html" xml:base="https://blog.tldnr.org/2019/07/13/Kossel-Enclosure-Build/">&lt;p&gt;I decided it was time to get a new 3D printer. 
+I wanted something with a bigger build volume, a higher quality and I always wanted to play around with a delta printer. 
+At the time of writing, the printers from the Chinese vendor Anycubic are well known for a good balance between price and quality. 
+Their delta printer “Anycubic Kossel Linear Plus” costs 250€, which is cheaper then a middle class smartphone.&lt;/p&gt;
+
+&lt;p&gt;When the printer arrived, even though I was satisfied with the print results and the overall qualitity of the printer, it became clear that I had to do something about the loud noise and the smell of plastic it produced. 
+That’s why I decided to build an enclosure.&lt;/p&gt;
+
+&lt;p&gt;There is some kind of odd tradition in the 3D printing community to build custom enclosures out of IKEA Lack tables. 
+So obviously I had to try the same. 
+I also tried to print as many parts of the enclosure as possible with the new 3D printer.&lt;/p&gt;
+
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#the-base-ikea-lack&quot; id=&quot;markdown-toc-the-base-ikea-lack&quot;&gt;The Base: IKEA Lack&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#doors&quot; id=&quot;markdown-toc-doors&quot;&gt;Doors&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#power-supply&quot; id=&quot;markdown-toc-power-supply&quot;&gt;Power Supply&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#filament-spool-holder&quot; id=&quot;markdown-toc-filament-spool-holder&quot;&gt;Filament Spool Holder&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#cable-management&quot; id=&quot;markdown-toc-cable-management&quot;&gt;Cable Management&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#soundproofing&quot; id=&quot;markdown-toc-soundproofing&quot;&gt;Soundproofing&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#software&quot; id=&quot;markdown-toc-software&quot;&gt;Software&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#monitoring-via-tablet&quot; id=&quot;markdown-toc-monitoring-via-tablet&quot;&gt;Monitoring via Tablet&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#summary&quot; id=&quot;markdown-toc-summary&quot;&gt;Summary&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;the-base-ikea-lack&quot;&gt;The Base: IKEA Lack&lt;/h2&gt;
+&lt;p&gt;It is not so easy to use an IKEA Lack table for an enclosure of a delta printer because delta printers require much more vertical space then their cartesian counterparts. 
+The Anycubic Kossel Linear Plus has a height of 68cm. 
+To achieve the needed height of the enclosure I had to “stack” two IKEA Lack tables (leg length is 40cm) on top of each other. 
+One table is upside down and the other table is on top of the first. The tables are connected with four, so called, &lt;a href=&quot;https://www.thingiverse.com/thing:3518793&quot;&gt;“Lack Stackers”&lt;/a&gt; which I had to print first.&lt;/p&gt;
+
+&lt;p&gt;Since I already was at IKEA, I bought three IKEA Ledberg LED Stripes and a Smoke Detector for the enclosure and screwed everything together.&lt;/p&gt;
+
+&lt;p&gt;For the three walls (left, right, back) I used spruce wood which was cut to the right size (90cm x 55cm) in a local hardware store.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/2019/lack-stacker.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/2019/leds-smoke.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;doors&quot;&gt;Doors&lt;/h2&gt;
+&lt;p&gt;The hardest part in the project was definitly adding the doors. 
+I didn’t want one big door, which would have needed a lot of space for opening and closing. 
+Instead, I decided to add two smaller double doors. 
+I used two plexiglas plates (size: 80cm x 22cm, thickness: 3mm) and printed everything else with the 3D printer. 
+This means the &lt;a href=&quot;https://www.thingiverse.com/thing:2306231&quot;&gt;door hinges&lt;/a&gt; and the &lt;a href=&quot;https://www.thingiverse.com/thing:9882&quot;&gt;door handles&lt;/a&gt; are completely printed (One hinge broke after a while so I printed a new one with more infill). 
+I scaled the door handles to make them smaller using OpenSCAD.
+I added magnets on top and bottom of the doors to keep the doors in place when they are closed. 
+Overall I must say plexiglas is very easy to drill.&lt;/p&gt;
+
+&lt;p&gt;The plexiglas plates are relativly big for their thickness, thats why I had to use very, very weak magnets. Otherwise the doors would bend a lot when pulling on one of the handles.&lt;/p&gt;
+
+&lt;p&gt;If you had ever installed two self-made doors in one self-made cabinet you would instantly know why, although it was fun and I learned a lot, I would not build such an enclosure again. It was a lot of fiddeling and pain to install the doors.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/2019/doors1.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/2019/doors2.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;power-supply&quot;&gt;Power Supply&lt;/h2&gt;
+&lt;p&gt;Because I expected some heat in it, I decided to move the power supply of the 3D printer out of the enclosure.
+I designed a holder for the power supply in FreeCAD and printed two of them.
+The cables included with the Anycubic Kossel power supply where (of course!) not long enough so I had to extend them.
+I used relative thick cables and led them out through a hole in the left wall.&lt;/p&gt;
+
+&lt;p&gt;The power supply itself is attached on the left wall on the outside of the enclosure directly sitting on the hole for the cables.
+With the hole covered, the inside of the enclosure is more protected against dust and I didn’t want to have more holes then neccessary in the enclosure.&lt;/p&gt;
+
+&lt;div class=&quot;stl-model&quot; data-file=&quot;/assets/stl/kossel_psu_holder.stl&quot;&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/2019/psu-holder.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/2019/power.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;filament-spool-holder&quot;&gt;Filament Spool Holder&lt;/h2&gt;
+&lt;p&gt;I also had to remove the filament spool holder from the Anycubic Kossel 3D printer because, with the spool holder attached, the printer would have been to big to fit into the enclosure. 
+I decided to print an advanced &lt;a href=&quot;https://www.thingiverse.com/thing:2908177&quot;&gt;spool holder&lt;/a&gt;, also as a test for the printers
+quality.&lt;/p&gt;
+
+&lt;p&gt;The spool holder is attached on top of the enclosure and the filament is guided through a small hole which I drilled in the top of the IKEA Lack table.&lt;/p&gt;
+
+&lt;p&gt;Inside the hole I inserted 3D printed “filament guide” which is quite helpful since the IKEA Lack table is hollow in the middle and simply drilling a hole in the top makes it hard to feed the filament through, if the filament is bent in any way.
+There are lot of filament guides on Thingiverse, e.g.: &lt;a href=&quot;https://www.thingiverse.com/thing:3118326&quot;&gt;3118326&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;To use a filament spool holder that sits “on top” of the printer, I had to turn the extruder motor 180° around.&lt;/p&gt;
+
+&lt;p&gt;Later I removed the extruder motor from the printer frame completely and attached it to the inner right enclosure wall. 
+The reason for removing the extruder motor from the frame was, that during one print the filament spool was tangled and blocked the print completly. 
+Nevertheless the extruder motor tried to pull and pull the filament in, so that the printer started to shake and jump around in the enclosure until it nearly fell over. 
+Fortunately, I saw this on the live video stream and was able to stop the print immediatley from remote. 
+More about the video stream and the remote control below.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/2019/filament-holder.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/2019/filament-holder2.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;cable-management&quot;&gt;Cable Management&lt;/h2&gt;
+&lt;p&gt;To manage all these cabels (LED Lights, Power supply, Sensors, Camera, …) I printed cable clips. 
+The cable clips are taken from the original &lt;a href=&quot;https://www.thingiverse.com/thing:2864118&quot;&gt;Prusa i3 MK3 enclosure&lt;/a&gt; and they work quite well.&lt;/p&gt;
+
+&lt;p&gt;The cables are still a mess, the reason is that I still tend to tinker around with the enclosure from time to time.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/2019/cableholder.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;soundproofing&quot;&gt;Soundproofing&lt;/h2&gt;
+&lt;p&gt;I added sound insulating foam to reduse the noise from the stepper motors.
+The foam was flame retardant and had an ignition temperature &amp;gt; 400°C.&lt;/p&gt;
+
+&lt;p&gt;I also printed six &lt;a href=&quot;https://www.thingiverse.com/thing:1319128&quot;&gt;Vibration Dampener Feet&lt;/a&gt; which, in my opinion, where more affective then the foam.&lt;/p&gt;
+
+&lt;h2 id=&quot;software&quot;&gt;Software&lt;/h2&gt;
+&lt;p&gt;I don’t want to sit next to the 3D printer monitoring the print jobs all the time so I needed some way of remote control. 
+The software &lt;a href=&quot;https://octoprint.org&quot;&gt;OctoPrint&lt;/a&gt; offers a web interface for 3D printers and allows the control and monitoring of 3D printers and print jobs via the browser, exactly what I wanted!
+I had an old, unused Raspberry Pi Model 1 laying around which I used as a server.&lt;/p&gt;
+
+&lt;p&gt;There is a Raspbian distribution which includes the OctoPrint host software and mjpg-streamer with support for the Raspberry Pi Camera Module (for live viewing of prints and timelapse video creation) which is called &lt;a href=&quot;https://github.com/guysoft/OctoPi&quot;&gt;OctoPi&lt;/a&gt;.
+The installation was very straight forward and even the old Raspberry Pi 1 (256MB RAM!) can handle OctoPrint very well. 
+The only downside of the limited resources: OctoPrint is not able to control the print itself because the serial connection is too slow. 
+But that doesn’t bother me because as a result of many bad expiriences with serial connections in the past I’m always printing from a SD card.&lt;/p&gt;
+
+&lt;p&gt;A live video stream helps a lot if you don’t want to sit next to your printer during all print jobs.
+OctoPrint has the ability to display such a live stream very nicely in it’s web interface and OctoPi comes directly installed with mjpeg-streamer. 
+Adding a Raspberry Pi Camera Module to the setup was quite easy (I had to order a longer camera cable) and everything worked directly out of the box.&lt;/p&gt;
+
+&lt;p&gt;I mentioned earlier that I expected some heat inside the enclosure during long running prints so I wanted some kind of temperature monitoring.
+I connected an DHT22 temprature und humidity sensor to the Raspberry Pi GPIO pins and installed the senor in the enclosure.
+The &lt;a href=&quot;https://www.thingiverse.com/thing:1718628&quot;&gt;adjustable mount for the Raspberry Camera Module&lt;/a&gt; is also printed by the Anycubic Kossel and worked very well.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/2019/raspberry-dht22.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/2019/camerasensor.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;There is a nice plugin for OctoPrint which is called “Enclosure Plugin”. 
+The plugin’s intend is to control a 3D printer enclosure via Raspberry Pi GPIO pins.
+The plugins feature include: control active heaters on an enclosure to keep the temperature for ABS prints, send an alarm when the temperature reaches some sort of critical value, control LEDs or add mechanical buttons to the enclosure to control various things like pause, stop or resume printer jobs.
+This plugin also integrates nicely into OctoPrints web interface.&lt;/p&gt;
+
+&lt;p&gt;At the moment I’m using this plugin to monitor and display the internal temperature and humidity of the enclosure. 
+Later I found out that the temperature inside the enclosure, even in long running multi hour prints, never rises above more then 28°C.
+But I guess it’s good to have such a monitoring in place nevertheless.
+Below are some screenshots of OctoPrint and the enclosure plugin in action.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/2019/enclosure-plugin-ui-tab.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/2019/enclosure-plugin-ui.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I was unable to find a case for the Raspberry Pi Model 1 with cutouts for the GPIO pins as well as for the Rasperry Pi camera cable.
+So I had to design my own, this time I used Autodesk Fusion 360, and printed it with the Anycubic Kossel.
+I mounted the case containing the Raspberry Pi on the outside of the enclosure next to the power supply.&lt;/p&gt;
+
+&lt;p&gt;The USB cable of the Anycubic Kossel is connected to the Raspberry Pi to allow control via serial connection.&lt;/p&gt;
+
+&lt;div class=&quot;stl-model&quot; data-file=&quot;/assets/stl/top_with_gpio_and_camera.stl&quot;&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/2019/picase.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;monitoring-via-tablet&quot;&gt;Monitoring via Tablet&lt;/h2&gt;
+&lt;p&gt;I’m using a tablet to actively monitor the print jobs via camera stream and the temperatures in the enclosure via OctoPrints web interface. 
+The &lt;a href=&quot;https://www.thingiverse.com/thing:1032038&quot;&gt;tablet stand&lt;/a&gt; for a 10” tablet is, of course, printed with the Anycubic Kossel 3D printer.
+It is also possible to pause or stop prints via the web interface.
+There is another OctoPrint plugin called “OctoPrint Anywhere” which allows you to view the livestream and pause/stop print jobs without access to the local network.&lt;/p&gt;
+
+&lt;h2 id=&quot;summary&quot;&gt;Summary&lt;/h2&gt;
+&lt;p&gt;Building the enclosure was a lot of fun but it was also very time consuming.
+The 3D printer is now protected against dust and it emits less noise and less plastic smell.
+Below is a picture of the finished enclosure (By the way, the cup contains Silica gel to reduce humidity in the enclosure).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/2019/enclosure.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name>Sebastian Glahn</name></author><category term="3D-Printing" /><summary type="html">I decided it was time to get a new 3D printer. I wanted something with a bigger build volume, a higher quality and I always wanted to play around with a delta printer. At the time of writing, the printers from the Chinese vendor Anycubic are well known for a good balance between price and quality. Their delta printer “Anycubic Kossel Linear Plus” costs 250€, which is cheaper then a middle class smartphone.</summary></entry><entry><title type="html">Control Startup Order In Docker Compose</title><link href="https://blog.tldnr.org/2018/06/06/control-docker-compose-startup-order/" rel="alternate" type="text/html" title="Control Startup Order In Docker Compose" /><published>2018-06-06T04:00:26+00:00</published><updated>2018-06-06T04:00:26+00:00</updated><id>https://blog.tldnr.org/2018/06/06/control-docker-compose-startup-order</id><content type="html" xml:base="https://blog.tldnr.org/2018/06/06/control-docker-compose-startup-order/">&lt;p&gt;A nice feature of Compose is the possibility to define dependencies between Docker containers. Compose starts containers in the defined order and evaluates the dependencies by the &lt;em&gt;depends_on&lt;/em&gt;, &lt;em&gt;links&lt;/em&gt;, &lt;em&gt;volumes_from&lt;/em&gt;, and &lt;em&gt;network_mode: “service:…”&lt;/em&gt; options. But, Compose only waits until a container is running, not if it’s &lt;em&gt;ready&lt;/em&gt; because it does not know if and when a certain service in a container is in a &lt;em&gt;ready&lt;/em&gt; state.&lt;/p&gt;
+
+&lt;p&gt;Normaly it is a good idea to implement such a &lt;em&gt;readiness&lt;/em&gt; check in the service itself. But sometimes, this is not possible. A different solution is to use a small wrapper script in the Docker container itself, to synchronize the start-up of the services’s interdependencies.&lt;/p&gt;
+
+&lt;p&gt;Here is an example with a &lt;a href=&quot;https://projects.spring.io/spring-boot&quot;&gt;Spring Boot&lt;/a&gt; application which has a dependency to a &lt;a href=&quot;https://www.postgresql.org/&quot;&gt;Postgres&lt;/a&gt; database and uses &lt;a href=&quot;http://www.liquibase.org&quot;&gt;Liquibase&lt;/a&gt; to manage and apply database schema changes.&lt;/p&gt;
+
+&lt;p&gt;The wrapper script takes a hostname and a port and checks periodically the availability via netcat. If the service becames available, the script will return success and the Spring Boot service will start. The wrapper script also has a timeout of 90 seconds. If the given hostname und port is not available until the timeout hits the wrapper script exits with an error. In this case the Spring Boot service will not be started and the Docker container stops.&lt;/p&gt;
+&lt;figure&gt;&lt;figcaption&gt;File: wait-for.sh&lt;/figcaption&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;c&quot;&gt;#!/usr/bin/env sh&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;$#&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-ne&lt;/span&gt; 1 &lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;then&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&amp;amp;2 &lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Usage: &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$0&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt; host:port&quot;&lt;/span&gt;
+    &lt;span class=&quot;nb&quot;&gt;exit&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-1&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;fi
+
+&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;ARGUMENT&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$1&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;HOST&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;$(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$ARGUMENT&lt;/span&gt; | &lt;span class=&quot;nb&quot;&gt;cut&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-d&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;':'&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-f1&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;PORT&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;$(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$ARGUMENT&lt;/span&gt; | &lt;span class=&quot;nb&quot;&gt;cut&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-d&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;':'&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-f2&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;MAX_RETRY&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;90
+
+&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Testing connection to host &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$HOST&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt; and port &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$PORT&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;.&quot;&lt;/span&gt;
+
+&lt;span class=&quot;nv&quot;&gt;count&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;0
+&lt;span class=&quot;k&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$count&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-lt&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$MAX_RETRY&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;do
+    &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;count&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;$((&lt;/span&gt;count+1&lt;span class=&quot;k&quot;&gt;))&lt;/span&gt;
+    nc &lt;span class=&quot;nt&quot;&gt;-z&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$HOST&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$PORT&lt;/span&gt;
+    &lt;span class=&quot;nv&quot;&gt;result&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$?&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$result&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-eq&lt;/span&gt; 0 &lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;then
+        &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Connection is available after &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$count&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt; second(s).&quot;&lt;/span&gt;
+        &lt;span class=&quot;nb&quot;&gt;exit &lt;/span&gt;0
+    &lt;span class=&quot;k&quot;&gt;fi
+    &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Retrying...&quot;&lt;/span&gt;
+    &lt;span class=&quot;nb&quot;&gt;sleep &lt;/span&gt;1
+&lt;span class=&quot;k&quot;&gt;done&lt;/span&gt;
+
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&amp;amp;2 &lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Timeout occurred after waiting &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$MAX_RETRY&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt; seconds for &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$HOST&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$PORT&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;.&quot;&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;exit&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-1&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;/figure&gt;
+&lt;p&gt;I created a small Dockerfile to build the Docker image containing the Spring Boot service. The file contains instructions to copy the service’s .jar file and the wrapper script to the image and to install netcat, because netcat is not available in the debian-slim openjdk-10 base image:&lt;/p&gt;
+&lt;figure&gt;&lt;figcaption&gt;File: Dockerfile&lt;/figcaption&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-docker&quot; data-lang=&quot;docker&quot;&gt;&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt;&lt;span class=&quot;s&quot;&gt; openjdk:10-slim&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;RUN &lt;/span&gt;apt-get update &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\
+&lt;/span&gt; apt-get &lt;span class=&quot;nb&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-y&lt;/span&gt; netcat&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;COPY&lt;/span&gt;&lt;span class=&quot;s&quot;&gt; wait-for.sh /opt/wait-for.sh&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;COPY&lt;/span&gt;&lt;span class=&quot;s&quot;&gt; build/libs/*.jar /opt/app.jar&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;/figure&gt;
+&lt;p&gt;As mentionend above, a Compose file defines the containers and their dependencies. I have created an example Compose file. The file defines a web container, which is the Spring Boot service, and a database container, which is the Postgres database. The web container defines a dependency to the database container via &lt;em&gt;depends_on&lt;/em&gt;. The entrypoint of the &lt;em&gt;web&lt;/em&gt; container is set to &lt;em&gt;bin/sh&lt;/em&gt; with additional parameters via the &lt;em&gt;entrypoint&lt;/em&gt; property. What happens here is that first, the wrapper script is called, which checks for the database to be &lt;em&gt;ready&lt;/em&gt; and if successful starts the Spring Boot service. One can, of course, add multiple hostnames and ports to wait for.&lt;/p&gt;
+&lt;figure&gt;&lt;figcaption&gt;File: docker-compose.yml&lt;/figcaption&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-docker&quot; data-lang=&quot;docker&quot;&gt;version: '2'
+
+services:
+  database:
+    image: postgres:10.4
+  web:
+    depends_on:
+      - &quot;database&quot;
+    build: .
+    command: [&quot;-c&quot;, &quot;/opt/wait-for.sh database:5432 &amp;amp;&amp;amp; java -jar /opt/app.jar&quot;]
+    entrypoint: [&quot;/bin/sh&quot;]
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://database:5432/postgres
+      - SPRING_DATASOURCE_USERNAME=postgres
+      - SPRING_DATASOURCE_PASSWORD=&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;/figure&gt;
+&lt;p&gt;When executing &lt;em&gt;docker-compose up&lt;/em&gt; the wrapper script checks periodically for the database to become ready (Retrying…) and then starts the Spring Boot Application when the connection becomes available after 4 seconds.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-raw&quot; data-lang=&quot;raw&quot;&gt;...
+web_1       | Testing connection to host database and port 5432.
+web_1       | Retrying...
+web_1       | Retrying...
+web_1       | Retrying...
+web_1       | Retrying...
+web_1       | Connection is available after 4 second(s).
+web_1       | 
+web_1       |   .   ____          _            __ _ _
+web_1       |  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+web_1       | ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+web_1       |  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+web_1       |   '  |____| .__|_| |_|_| |_\__, | / / / /
+web_1       |  =========|_|==============|___/=/_/_/_/
+web_1       |  :: Spring Boot ::        (v2.0.2.RELEASE)
+web_1       | 
+...&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Find the full, working project including the Spring Boot service, Dockerfile, docker-compose.yml and wait-for.sh on &lt;a href=&quot;https://github.com/sglahn/spring-boot-hello-world&quot;&gt;Github&lt;/a&gt;.&lt;/p&gt;</content><author><name>Sebastian Glahn</name></author><category term="[&quot;Docker&quot;, &quot;Command-Line&quot;]" /><summary type="html">A nice feature of Compose is the possibility to define dependencies between Docker containers. Compose starts containers in the defined order and evaluates the dependencies by the depends_on, links, volumes_from, and network_mode: “service:…” options. But, Compose only waits until a container is running, not if it’s ready because it does not know if and when a certain service in a container is in a ready state.</summary></entry><entry><title type="html">Automatically Prefix Your Commit Messages With A Jira Issue ID</title><link href="https://blog.tldnr.org/2018/01/10/automatically-prefix-commit-message-with-jira-issue-id/" rel="alternate" type="text/html" title="Automatically Prefix Your Commit Messages With A Jira Issue ID" /><published>2018-01-10T04:00:26+00:00</published><updated>2018-01-10T04:00:26+00:00</updated><id>https://blog.tldnr.org/2018/01/10/automatically-prefix-commit-message-with-jira-issue-id</id><content type="html" xml:base="https://blog.tldnr.org/2018/01/10/automatically-prefix-commit-message-with-jira-issue-id/">&lt;p&gt;In my day-to-day work I’m using the command-line and therefore Git from the command-line a lot. Over the years I have customized my own software development environment to better fit my needs and to make me more productive. When working with Jira it’s a habit to include the Jira issue id and the issue title in the branch name. This means a branch name typically is something like &lt;em&gt;feature/foo/ISSUE-123-issue-tile&lt;/em&gt;. When working with Bamboo as well it`s nice to have the
+Jira issue id as a prefix of all commit messages because this will allow Bamboo to collect all commits for specific build. However, adding the issue id in every commit message manually is a pain that’s why I automated the process.&lt;/p&gt;
+
+&lt;p&gt;My solution is an shell function because normaly I would use an alias or a function to commit to Git anyway. My function is called gcmj(short for &lt;strong&gt;G&lt;/strong&gt;it &lt;strong&gt;C&lt;/strong&gt;ommit &lt;strong&gt;M&lt;/strong&gt;essage &lt;strong&gt;J&lt;/strong&gt;ira), you can put it in your .bash_profile or whatever you put your aliases. This is how it looks:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;k&quot;&gt;function &lt;/span&gt;gcmj&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt; 
+    &lt;span class=&quot;nb&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;$(&lt;/span&gt;gjira&lt;span class=&quot;si&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; 
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[[&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$?&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; 0 &lt;span class=&quot;o&quot;&gt;]]&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;then 
+        &lt;/span&gt;git commit &lt;span class=&quot;nt&quot;&gt;-m&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$id&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;: &quot;&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; 
+    &lt;span class=&quot;k&quot;&gt;else 
+        &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Error: Failed to retieve Jira Ticket Id from branch name!&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; 
+        &lt;span class=&quot;k&quot;&gt;return &lt;/span&gt;1&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; 
+    &lt;span class=&quot;k&quot;&gt;fi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; 
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Basically it calls a function which tries to parse a Jira issue id from the current branch name and prepends it to the Git commit message. If there is no issue id in the branch name the function will report an error and commit nothing. 
+You can call it like this:&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gcmj &quot;This is my commit message&quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;And the commit message will be:&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ISSUE-123: This is my commit message
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;The function to parse the issue id looks this way:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;k&quot;&gt;function &lt;/span&gt;gjira&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt; 
+    git symbolic-ref &lt;span class=&quot;nt&quot;&gt;--short&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-q&lt;/span&gt; HEAD  | &lt;span class=&quot;nb&quot;&gt;grep&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-w&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-Eo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;[A-Z0-9]{1,10}-?[A-Z0-9]+-&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\d&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;+&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; 
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[[&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$?&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!=&lt;/span&gt; 0 &lt;span class=&quot;o&quot;&gt;]]&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; 
+        &lt;span class=&quot;k&quot;&gt;then &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Error: Failed to retrieve Jira Ticket Id from branch name!&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; 
+        &lt;span class=&quot;k&quot;&gt;return &lt;/span&gt;1&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;fi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; 
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;I have also a function to prepend NO-TICKET to my commit messages. This function is called gcmn(short for &lt;strong&gt;G&lt;/strong&gt;it &lt;strong&gt;C&lt;/strong&gt;ommit &lt;strong&gt;M&lt;/strong&gt;essage &lt;strong&gt;N&lt;/strong&gt;o-Ticket):&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;k&quot;&gt;function &lt;/span&gt;gcmn&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt; git commit &lt;span class=&quot;nt&quot;&gt;-m&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;NO-TICKET: &quot;&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Reference: &lt;a href=&quot;https://confluence.atlassian.com/display/STASHKB/Integrating+with+custom+JIRA+issue+key&quot;&gt;Integrating with custom JIRA issue key&lt;/a&gt;&lt;/p&gt;</content><author><name>Sebastian Glahn</name></author><category term="[&quot;Git&quot;, &quot;Command-Line&quot;]" /><summary type="html">In my day-to-day work I’m using the command-line and therefore Git from the command-line a lot. Over the years I have customized my own software development environment to better fit my needs and to make me more productive. When working with Jira it’s a habit to include the Jira issue id and the issue title in the branch name. This means a branch name typically is something like feature/foo/ISSUE-123-issue-tile. When working with Bamboo as well it`s nice to have the Jira issue id as a prefix of all commit messages because this will allow Bamboo to collect all commits for specific build. However, adding the issue id in every commit message manually is a pain that’s why I automated the process.</summary></entry><entry><title type="html">How To Deliver Larger Web Pages With An ESP8266</title><link href="https://blog.tldnr.org/2017/10/25/how-to-deliver-larger-web-pages-with-an-esp8266/" rel="alternate" type="text/html" title="How To Deliver Larger Web Pages With An ESP8266" /><published>2017-10-25T19:00:26+00:00</published><updated>2017-10-25T19:00:26+00:00</updated><id>https://blog.tldnr.org/2017/10/25/how-to-deliver-larger-web-pages-with-an-esp8266</id><content type="html" xml:base="https://blog.tldnr.org/2017/10/25/how-to-deliver-larger-web-pages-with-an-esp8266/">&lt;p&gt;The ESP8266 is a low-cost Wi-Fi chip with full TCP/IP stack and microcontroller unit which makes it very attractive for small DIY IoT projects. When building a web server with the ESP8266, I stumbled over the problem of the limited message size of WiFiClients print() method (It is somewhere around 2922 bytes). Delivering more complex web pages, containing CSS and JavaScript, requires working around the limited memory of the device.&lt;/p&gt;
+&lt;center&gt;&lt;figure&gt;&lt;img src=&quot;/images/2017/configuration.png&quot; /&gt;&lt;figcaption&gt;A simple configuration page, 4430 bytes&lt;/figcaption&gt;&lt;/figure&gt;&lt;/center&gt;
+
+&lt;p&gt;In my last project, I built a HTML template with inline CSS and JavaScript. The template contains HTML comments which are used as markers for a simple Ruby script.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- HEAD --&amp;gt;&lt;/span&gt;
+...
+&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- SCRIPT --&amp;gt;&lt;/span&gt;  
+...
+&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- STYLE --&amp;gt;&lt;/span&gt;      
+...&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;The script cuts the HTML template at these marked lines and creates a C++ header file.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;c1&quot;&gt;#!/usr/bin/ruby&lt;/span&gt;
+
+&lt;span class=&quot;nb&quot;&gt;require&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;yui/compressor&quot;&lt;/span&gt;
+
+&lt;span class=&quot;no&quot;&gt;TEMPLATING_RULES&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;'&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+
+&lt;span class=&quot;no&quot;&gt;OUTPUT&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;File&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;open&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'../src/ConfigurationTemplate.h'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'w'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;process_html&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;f&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;File&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;open&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'configuration-template.html'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'r'&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;compressor&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;YUI&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;CssCompressor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;new&lt;/span&gt;
+    
+    &lt;span class=&quot;no&quot;&gt;OUTPUT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'//'&lt;/span&gt;
+    &lt;span class=&quot;no&quot;&gt;OUTPUT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'// Do not edit this file, generated code.'&lt;/span&gt;
+    &lt;span class=&quot;no&quot;&gt;OUTPUT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'//'&lt;/span&gt;
+    &lt;span class=&quot;no&quot;&gt;OUTPUT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;''&lt;/span&gt;
+    
+    &lt;span class=&quot;n&quot;&gt;text&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kp&quot;&gt;nil&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;f&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;each_line&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;line&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;line&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;start_with?&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&amp;lt;!--'&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;text&lt;/span&gt;
+                &lt;span class=&quot;no&quot;&gt;OUTPUT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;text&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&quot;;'&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;text&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;''&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;text&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'const char HTTP_'&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;line&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;split&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;' '&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'[] PROGMEM = &quot;'&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;
+          &lt;span class=&quot;no&quot;&gt;TEMPLATING_RULES&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;each&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rule&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;line&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;gsub!&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rule&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rule&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+          &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+          &lt;span class=&quot;n&quot;&gt;text&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;compressor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;compress&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;line&lt;/span&gt;
+      &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt; 
+   &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+   &lt;span class=&quot;no&quot;&gt;OUTPUT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;close&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;process_html&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;In the header file, the generated Strings, which can be very long, are stored using the PROGMEM() macro.
+PROGMEM data is stored in flash (program) memory instead of the SRAM. On Arduino and ESP8266 a variable such as const char * will be placed in RAM, not flash memory. It is possible to place this variable into flash memory and load it when it is needed into RAM.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-c--&quot; data-lang=&quot;c++&quot;&gt;&lt;span class=&quot;k&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;char&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;HTTP_HEAD&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;PROGMEM&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;&amp;lt;!DOCTYPE html&amp;gt;&amp;lt;html&amp;gt;&amp;lt;head lang='en'&amp;gt;&amp;lt;title&amp;gt;My Title&amp;lt;/title&amp;gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;In the web server, I had to concatenate the flash Strings to one HTTP response. For this case I used the FSPTR() macro. FSPTR takes a PROGMEM pointer and casts it to __FlashStringHelper to pass it to other functions.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-c--&quot; data-lang=&quot;c++&quot;&gt;&lt;span class=&quot;n&quot;&gt;server&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;ESP8266WebServer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;serverPort&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;...&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;page&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;FPSTR&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;HTTP_HEAD&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;page&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;FPSTR&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;HTTP_SCRIPT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;page&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;FPSTR&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;HTTP_STYLE&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;body&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;FPSTR&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;HTTP_BODY&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;...&lt;/span&gt; 
+&lt;span class=&quot;n&quot;&gt;page&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;FPSTR&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;HTTP_FOOT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;...&lt;/span&gt; 
+&lt;span class=&quot;n&quot;&gt;server&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sendHeader&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Content-Length&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;page&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;length&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()));&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;server&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;send&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;200&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;text/html&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;page&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Without the ability to add runtime data the web page would be useless. I used simple String replacement to achieve this. In my template, I used the placeholder syntax {{property name}} to mark which parts should be replaced. Here is an example:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;p&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;text&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Firmware: &lt;span class=&quot;nt&quot;&gt;&amp;lt;b&amp;gt;&lt;/span&gt;{{firmware}}&lt;span class=&quot;nt&quot;&gt;&amp;lt;/b&amp;gt;&amp;lt;/p&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;The web server replaces these placeholders when creating the HTTP response via String.replace() at runtime.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-c--&quot; data-lang=&quot;c++&quot;&gt;&lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;body&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;FPSTR&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;HTTP_BODY&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;body&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;replace&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;{{firmware}}&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;configuration&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;firmware&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;page&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;body&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;With this setup it is possible to deliver bigger web pages even with the limited RAM of an ESP8266. You can find the complete project on &lt;a href=&quot;https://github.com/sglahn/esp8266-sensor-board-firmware&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Reference: &lt;a href=&quot;http://arduino-esp8266.readthedocs.io/en/latest/PROGMEM.html&quot;&gt;PROGMEM and FSPTR documentation&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span itemprop=&quot;author&quot; itemscope=&quot;&quot; itemtype=&quot;https://schema.org/Person&quot;&gt;
+    &lt;meta itemprop=&quot;name&quot; content=&quot;Sebastian Glahn&quot; /&gt;
+    &lt;meta itemprop=&quot;url&quot; content=&quot;http://blog.tldnr.org&quot; /&gt;
+    &lt;meta itemprop=&quot;sameAs&quot; content=&quot;https://twitter.com/sglahn&quot; /&gt;
+    &lt;meta itemprop=&quot;sameAs&quot; content=&quot;https://github.com/sglahn&quot; /&gt;
+    &lt;meta itemprop=&quot;sameAs&quot; content=&quot;https://www.thingiverse.com/sglahn&quot; /&gt;
+    &lt;meta itemprop=&quot;sameAs&quot; content=&quot;https://stackoverflow.com/users/1453205/sglahn&quot; /&gt;
+&lt;/span&gt;&lt;/p&gt;</content><author><name>Sebastian Glahn</name></author><category term="[&quot;Microcontroller&quot;]" /><summary type="html">The ESP8266 is a low-cost Wi-Fi chip with full TCP/IP stack and microcontroller unit which makes it very attractive for small DIY IoT projects. When building a web server with the ESP8266, I stumbled over the problem of the limited message size of WiFiClients print() method (It is somewhere around 2922 bytes). Delivering more complex web pages, containing CSS and JavaScript, requires working around the limited memory of the device. A simple configuration page, 4430 bytes</summary></entry><entry><title type="html">Released gradle-dockerfile-plugin version 0.3</title><link href="https://blog.tldnr.org/2017/04/18/gradle-dockerfile-plugin-03-released/" rel="alternate" type="text/html" title="Released gradle-dockerfile-plugin version 0.3" /><published>2017-04-18T19:00:26+00:00</published><updated>2017-04-18T19:00:26+00:00</updated><id>https://blog.tldnr.org/2017/04/18/gradle-dockerfile-plugin-03-released</id><content type="html" xml:base="https://blog.tldnr.org/2017/04/18/gradle-dockerfile-plugin-03-released/">&lt;p&gt;I have just released version 0.3 of my &lt;a href=&quot;https://github.com/sglahn/gradle-dockerfile-plugin&quot;&gt;gradle-dockerfile-plugin&lt;/a&gt;. This is a Gradle plugin to build and push Docker images using an external Dockerfile. This means there is no need of inline configuration for Docker in the Gradle build file. The plugin is available through &lt;a href=&quot;https://search.maven.org/#search%7Cgav%7C1%7Cg%3A%22org.sglahn%22%20AND%20a%3A%22gradle-dockerfile-plugin%22&quot;&gt;Maven Central&lt;/a&gt; and the &lt;a href=&quot;https://plugins.gradle.org/plugin/org.sglahn.gradle-dockerfile-plugin&quot;&gt;Gradle Plugin Portal&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;installation&quot;&gt;Installation&lt;/h3&gt;
+
+&lt;p&gt;To use the plugin add a build script dependency to your Gradle build file:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-groovy&quot; data-lang=&quot;groovy&quot;&gt;&lt;span class=&quot;n&quot;&gt;buildscript&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;repositories&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mavenCentral&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;dependencies&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;classpath&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'org.sglahn:gradle-dockerfile-plugin:0.3'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;apply&lt;/span&gt; &lt;span class=&quot;nl&quot;&gt;plugin:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'dockerfile'&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;or via the new plugin mechanism introduced in Gradle 2.1:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-groovy&quot; data-lang=&quot;groovy&quot;&gt;&lt;span class=&quot;n&quot;&gt;plugins&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;id&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;org.sglahn.gradle-dockerfile-plugin&quot;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;version&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;0.3&quot;&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;The plugin will add the following tasks to your project:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;./gradlew tasks
+Docker tasks
+&lt;span class=&quot;nt&quot;&gt;------------&lt;/span&gt;
+dockerBuild - Builds a new image with a Dockerfile.
+dockerPush - Pushes a docker image to a repository.&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h3 id=&quot;the-dockerbuild-task&quot;&gt;The dockerBuild task&lt;/h3&gt;
+
+&lt;p&gt;The dockerBuild task will build a new Docker image. The default settings are:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;dockerfile: ${projectDir}/Dockerfile.&lt;/li&gt;
+  &lt;li&gt;imageName: project.name&lt;/li&gt;
+  &lt;li&gt;tags: project.version and latest.
+For more information see Configuration section.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;the-dockerpush-task&quot;&gt;The dockerPush task&lt;/h3&gt;
+
+&lt;p&gt;The dockerPush task will push the Docker image to a Docker repository. If authentication is required use &lt;a href=&quot;https://docs.docker.com/engine/reference/commandline/login/&quot;&gt;docker login&lt;/a&gt; to add the credential to your $HOME/.docker/config.json file. &lt;a href=&quot;https://hub.docker.com/r/sglahn/gradle-dockerfile-plugin-example-project/&quot;&gt;This&lt;/a&gt; is how it looks like when the example project pushed to DockerHub.&lt;/p&gt;
+
+&lt;h3 id=&quot;configuration&quot;&gt;Configuration&lt;/h3&gt;
+
+&lt;p&gt;The following configuration can be added to your Gradle build file:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-groovy&quot; data-lang=&quot;groovy&quot;&gt;&lt;span class=&quot;n&quot;&gt;docker&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// Image version. Optional, default = project.version&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;imageVersion&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;version&quot;&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// Image name. Optional, default = project.name&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;imageName&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;name&quot;&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// Docker repository. Optional, default == no repository&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;dockerRepository&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'sglahn'&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// Path to the Dockerfile to use. Optional, &lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// default = ${projectDir}/Dockerfile&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;dockerFile&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'src/main/docker/Dockerfile'&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// Add a list of tags for an image. Optional, default = $applicationVersion&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;tags&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;version&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'latest'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'Hello'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// Set metadata for an image. Optional, default = no label applied&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;labels&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'branch=master'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'mylabel=test'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// name and value of a buildarg. Optional, default = no build arguments&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;buildArgs&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'http_proxy=&quot;http://some.proxy.url&quot;'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// Always remove intermediate containers, even after unsuccessful builds. &lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// Optional, default = false&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;removeIntermediateContainers&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// Isolation specifies the type of isolation technology used by containers. &lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// Optional, default = default&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;isolation&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'default'&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// Do not use cache when building the image. Optional, default = false&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;noCache&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// Always attempt to pull a newer version of the image. &lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// Optional, default false&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;pull&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// Suppress the build output and print image ID on success. &lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// Optional, default = true&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;quiet&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;span itemprop=&quot;author&quot; itemscope=&quot;&quot; itemtype=&quot;https://schema.org/Person&quot;&gt;
+    &lt;meta itemprop=&quot;name&quot; content=&quot;Sebastian Glahn&quot; /&gt;
+    &lt;meta itemprop=&quot;url&quot; content=&quot;http://blog.tldnr.org&quot; /&gt;
+    &lt;meta itemprop=&quot;sameAs&quot; content=&quot;https://twitter.com/sglahn&quot; /&gt;
+    &lt;meta itemprop=&quot;sameAs&quot; content=&quot;https://github.com/sglahn&quot; /&gt;
+    &lt;meta itemprop=&quot;sameAs&quot; content=&quot;https://www.thingiverse.com/sglahn&quot; /&gt;
+    &lt;meta itemprop=&quot;sameAs&quot; content=&quot;https://stackoverflow.com/users/1453205/sglahn&quot; /&gt;
+&lt;/span&gt;&lt;/p&gt;</content><author><name>Sebastian Glahn</name></author><category term="[&quot;Docker&quot;, &quot;Java&quot;]" /><summary type="html">I have just released version 0.3 of my gradle-dockerfile-plugin. This is a Gradle plugin to build and push Docker images using an external Dockerfile. This means there is no need of inline configuration for Docker in the Gradle build file. The plugin is available through Maven Central and the Gradle Plugin Portal.</summary></entry><entry><title type="html">How To Compile Gizmod</title><link href="https://blog.tldnr.org/2015/07/20/how-to-compile-gizmod/" rel="alternate" type="text/html" title="How To Compile Gizmod" /><published>2015-07-20T19:00:26+00:00</published><updated>2015-07-20T19:00:26+00:00</updated><id>https://blog.tldnr.org/2015/07/20/how-to-compile-gizmod</id><content type="html" xml:base="https://blog.tldnr.org/2015/07/20/how-to-compile-gizmod/">&lt;p&gt;The Gizmo Daemon is a very powerfull little utility to control applications and devices based on input events. I am using Gizmod to control my DIY &lt;a href=&quot;/2013/07/22/arcade-cabinet-scratch-build/&quot;&gt;Arcade Cabinet&lt;/a&gt; with USB Controllers to navigate through the menus and start or stop games. When I updated my Arcade Cabinet with new hardware I found out that Gizmod does not compile on newer Ubuntu versions. It seems like Gizmod is not well maintained at the moment.&lt;/p&gt;
+&lt;center&gt;
+&lt;figure&gt;
+&lt;img src=&quot;/images/2015/gizmod.jpg&quot; /&gt;&lt;figcaption&gt;I'm using the Gizmo Daemon to create input events from USB gamepads&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;/center&gt;
+
+&lt;h3 id=&quot;as-described-in-the-documentation&quot;&gt;As described in the documentation…&lt;/h3&gt;
+
+&lt;p&gt;1) Checkout the Subversion code of Gizmod:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;svn checkout svn://svn.code.sf.net/p/gizmod/code/ gizmod-code&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;2) Install some dependencies neccessary for the compile:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt; 
+&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-get &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;libboost-all-dev
+&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-get &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;libx11-dev
+&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-get &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;libvisual-0.4-dev
+&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-get &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;libasound2&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;3) Create the build directory:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt; 
+&lt;span class=&quot;nb&quot;&gt;mkdir &lt;/span&gt;build
+&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;build&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;4) And call cmake:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt; 
+cmake &lt;span class=&quot;nt&quot;&gt;-DCMAKE_INSTALL_PREFIX&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;/usr &lt;span class=&quot;nt&quot;&gt;-DSYSCONF_INSTALL_DIR&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;/etc ..
+CMake Warning &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;dev&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; at CMakeLists.txt:55 &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;include&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;:
+  Policy CMP0011 is not &lt;span class=&quot;nb&quot;&gt;set&lt;/span&gt;: Included scripts &lt;span class=&quot;k&quot;&gt;do &lt;/span&gt;automatic cmake_policy PUSH
+  and POP.  Run &lt;span class=&quot;s2&quot;&gt;&quot;cmake --help-policy CMP0011&quot;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;policy details.  Use the
+  cmake_policy &lt;span class=&quot;nb&quot;&gt;command &lt;/span&gt;to &lt;span class=&quot;nb&quot;&gt;set &lt;/span&gt;the policy and suppress this warning.
+
+  The included script
+
+    /home/user/Software/gizmod/gizmod-code/gizmod3/cmake/Modules/
+DefineProjectDefaults.cmake
+
+  affects policy settings.  CMake is implying the NO_POLICY_SCOPE option &lt;span class=&quot;k&quot;&gt;for
+  &lt;/span&gt;compatibility, so the effects are applied to the including context.
+This warning is &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;project developers.  Use &lt;span class=&quot;nt&quot;&gt;-Wno-dev&lt;/span&gt; to suppress it.
+
+&lt;span class=&quot;nt&quot;&gt;--&lt;/span&gt; Found Boost: /usr/lib/x86_64-linux-gnu/libboost_date_time.so&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;/usr/lib/
+x86_64-linux-gnu/libboost_filesystem.so&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;/usr/lib/x86_64-linux-gnu/
+libboost_iostreams.so&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;/usr/lib/x86_64-linux-gnu/libboost_prg_exec_monitor.so&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+/usr/lib/x86_64-linux-gnu/libboost_program_options.so&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;/usr/lib/
+x86_64-linux-gnu/libboost_python.so&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;/usr/lib/x86_64-linux-gnu/
+libboost_regex.so&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;/usr/lib/x86_64-linux-gnu/libboost_serialization.so&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+/usr/lib/x86_64-linux-gnu/libboost_signals.so&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;/usr/lib/x86_64-linux-gnu/
+libboost_test_exec_monitor.a&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+/usr/lib/x86_64-linux-gnu/libboost_thread.so&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;/usr/lib/x86_64-linux-gnu/
+libboost_unit_test_framework.so&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;/usr/lib/x86_64-linux-gnu/
+libboost_wserialization.so
+&lt;span class=&quot;nt&quot;&gt;--&lt;/span&gt; Installation Variables:
+   Build Type       &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;CMAKE_BUILD_TYPE&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;:     Release
+   Install Prefix   &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;CMAKE_INSTALL_PREFIX&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;: /usr
+   Data Dir         &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;DATA_INSTALL_DIR&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;:     /usr/share/Gizmod
+   Lib Dir          &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;LIB_INSTALL_DIR&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;:      /usr/lib
+   Plugin Dir       &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;PLUGIN_INSTALL_DIR&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;:   /usr/lib/Gizmod
+   Config Dir       &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;SYSCONF_INSTALL_DIR&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;:  /usr/etc
+   Build vis plugin &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;BUILD_VIS_PLUGIN&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;:     True
+&lt;span class=&quot;nt&quot;&gt;--&lt;/span&gt; ALSA not found
+&lt;span class=&quot;nt&quot;&gt;--&lt;/span&gt; Configuring &lt;span class=&quot;k&quot;&gt;done&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;--&lt;/span&gt; Generating &lt;span class=&quot;k&quot;&gt;done&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;--&lt;/span&gt; Build files have been written to: /home/user/Software/gizmod/gizmod-code/
+gizmod3/build&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;5) Compile:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt; 
+make
+Scanning dependencies of target H
+&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;  1%] Building CXX object libH/CMakeFiles/H.dir/Average.o
+In file included from /home/user/Software/gizmod/gizmod-code/gizmod3/libH/
+Average.cpp:31:0:
+/home/user/Software/gizmod/gizmod-code/gizmod3/libH/Average.hpp:74:5: 
+error: ‘size_t’ does not name a &lt;span class=&quot;nb&quot;&gt;type
+     &lt;/span&gt;size_t        mHeadIdx&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;   ///&amp;amp;lt&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;  Current location &lt;span class=&quot;k&quot;&gt;in &lt;/span&gt;the circular buffer
+     ^
+/home/user/Software/gizmod/gizmod-code/gizmod3/libH/Average.hpp:76:5: error: 
+‘size_t’ does not name a &lt;span class=&quot;nb&quot;&gt;type
+     &lt;/span&gt;size_t    mFillState&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;   ///&amp;amp;lt&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;  Current fill state
+     ^
+/home/user/Software/gizmod/gizmod-code/gizmod3/libH/Average.cpp: In constructor 
+‘H::Average::Average&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;int&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;’:
+/home/user/Software/gizmod/gizmod-code/gizmod3/libH/Average.cpp:53:2: error: 
+‘mHeadIdx’ was not declared &lt;span class=&quot;k&quot;&gt;in &lt;/span&gt;this scope
+  mHeadIdx &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 0&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  ^
+/home/user/Software/gizmod/gizmod-code/gizmod3/libH/Average.cpp:55:2: error: 
+‘mFillState’ was not declared &lt;span class=&quot;k&quot;&gt;in &lt;/span&gt;this scope
+  mFillState &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 0&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  ^
+/home/user/Software/gizmod/gizmod-code/gizmod3/libH/Average.cpp: In member 
+&lt;span class=&quot;k&quot;&gt;function&lt;/span&gt; ‘void H::Average::push&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;double&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;’:
+/home/user/Software/gizmod/gizmod-code/gizmod3/libH/Average.cpp:73:6: error: 
+‘mFillState’ was not declared &lt;span class=&quot;k&quot;&gt;in &lt;/span&gt;this scope
+  &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;mFillState &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; mValues.size&lt;span class=&quot;o&quot;&gt;())&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+      ^
+/home/user/Software/gizmod/gizmod-code/gizmod3/libH/Average.cpp:74:27: error: 
+‘mHeadIdx’ was not declared &lt;span class=&quot;k&quot;&gt;in &lt;/span&gt;this scope
+   mSum +&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; Value - mValues[mHeadIdx]&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+                           ^
+/home/user/Software/gizmod/gizmod-code/gizmod3/libH/Average.cpp:79:11: error: 
+‘mHeadIdx’ was not declared &lt;span class=&quot;k&quot;&gt;in &lt;/span&gt;this scope
+   mValues[mHeadIdx] &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; Value&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+           ^
+/home/user/Software/gizmod/gizmod-code/gizmod3/libH/Average.cpp:81:2: error: 
+‘mHeadIdx’ was not declared &lt;span class=&quot;k&quot;&gt;in &lt;/span&gt;this scope
+  mHeadIdx &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;mHeadIdx + 1&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; % mValues.size&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  ^
+/home/user/Software/gizmod/gizmod-code/gizmod3/libH/Average.cpp: In member 
+&lt;span class=&quot;k&quot;&gt;function&lt;/span&gt; ‘double H::Average::average&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt;’:
+/home/user/Software/gizmod/gizmod-code/gizmod3/libH/Average.cpp:89:8: error: 
+‘mFillState’ was not declared &lt;span class=&quot;k&quot;&gt;in &lt;/span&gt;this scope
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;mFillState &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; 0&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+        ^
+make[2]: &lt;span class=&quot;k&quot;&gt;***&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;libH/CMakeFiles/H.dir/Average.o] Fehler 1
+make[1]: &lt;span class=&quot;k&quot;&gt;***&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;libH/CMakeFiles/H.dir/all] Fehler 2
+make: &lt;span class=&quot;k&quot;&gt;***&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;all] Fehler 2&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h3 id=&quot;fix-the-errors&quot;&gt;Fix the errors&lt;/h3&gt;
+&lt;p&gt;The compiler throws some errors. To fix the size_t errors add the following include in the files &lt;i&gt;libH/Average.hpp&lt;/i&gt; and &lt;i&gt;libH/DynamicBuffer.hpp&lt;/i&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-cpp&quot; data-lang=&quot;cpp&quot;&gt;&lt;span class=&quot;cp&quot;&gt;#include &amp;lt;stdlib&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;If we run make again we get:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;make
+/home/user/Software/gizmod/gizmod-code/gizmod3/libGizmod/Processes.cpp:157:27: 
+error: ‘class boost::filesystem::directory_entry’ has no member named ‘string’
+   string StatPath &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; iter-&amp;gt;string&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; + &lt;span class=&quot;s2&quot;&gt;&quot;/stat&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+                           ^
+make[2]: &lt;span class=&quot;k&quot;&gt;***&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;libGizmod/CMakeFiles/Gizmod.dir/Processes.o] Fehler 1
+make[1]: &lt;span class=&quot;k&quot;&gt;***&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;libGizmod/CMakeFiles/Gizmod.dir/all] Fehler 2
+make: &lt;span class=&quot;k&quot;&gt;***&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;all] Fehler 2&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;To fix these errors we have to change the line 157 in file &lt;i&gt;/gizmod-3.5/libGizmod/Proceses.cpp&lt;/i&gt;:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-cpp&quot; data-lang=&quot;cpp&quot;&gt;&lt;span class=&quot;n&quot;&gt;string&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;StatPath&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;iter&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;/stat&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;to&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-cpp&quot; data-lang=&quot;cpp&quot;&gt;&lt;span class=&quot;n&quot;&gt;string&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;StatPath&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;iter&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;path&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;/stat&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;and in the file &lt;i&gt;/gizmod-3.5/gizmod/GizmoDaemon.cpp&lt;/i&gt; on line 1109 we have to change:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-cpp&quot; data-lang=&quot;cpp&quot;&gt;&lt;span class=&quot;n&quot;&gt;ret&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;sys.path.insert(0, &lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;iter&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;to:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-cpp&quot; data-lang=&quot;cpp&quot;&gt;&lt;span class=&quot;n&quot;&gt;ret&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;sys.path.insert(0, &lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;iter&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;path&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;On line 1567 we have to change:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-cpp&quot; data-lang=&quot;cpp&quot;&gt;&lt;span class=&quot;n&quot;&gt;UserScripts&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;push_back&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;iter&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;path&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;leaf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;());&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;to:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-cpp&quot; data-lang=&quot;cpp&quot;&gt;&lt;span class=&quot;n&quot;&gt;UserScripts&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;push_back&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;iter&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;path&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;filename&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;());&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;On line 2192:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-cpp&quot; data-lang=&quot;cpp&quot;&gt;&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;iter&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;path&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;leaf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;find&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;event&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;to:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-cpp&quot; data-lang=&quot;cpp&quot;&gt;&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;iter&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;path&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;filename&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;find&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;event&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;And on line 2194, change:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-cpp&quot; data-lang=&quot;cpp&quot;&gt;&lt;span class=&quot;n&quot;&gt;eventsFiles&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;push_back&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mEventsDir&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;/&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;iter&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;path&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;leaf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;());&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;to:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-cpp&quot; data-lang=&quot;cpp&quot;&gt;&lt;span class=&quot;n&quot;&gt;eventsFiles&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;push_back&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mEventsDir&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;/&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;iter&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;path&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;filename&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;());&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Let’s call make again:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;make
+&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt; 29%] Built target H
+&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt; 87%] Built target Gizmod
+Scanning dependencies of target gizmod
+&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt; 88%] Building CXX object gizmod/CMakeFiles/gizmod.dir/GizmoDaemon.o
+&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt; 90%] Building CXX object gizmod/CMakeFiles/gizmod.dir/GizmoUtils.o
+&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt; 92%] Building CXX object gizmod/CMakeFiles/gizmod.dir/
+GizmodEventHandlerInterface.o
+&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt; 94%] Building CXX object gizmod/CMakeFiles/gizmod.dir/Main.o
+/home/user/Software/gizmod/gizmod-code/gizmod3/gizmod/Main.cpp: In &lt;span class=&quot;k&quot;&gt;function&lt;/span&gt; 
+‘int main&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;int, char&lt;span class=&quot;k&quot;&gt;**&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;’:
+/home/user/Software/gizmod/gizmod-code/gizmod3/gizmod/Main.cpp:57:2: error: 
+‘default_name_check’ is not a member of ‘boost::filesystem::path’
+  path::default_name_check&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;native&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  ^
+make[2]: &lt;span class=&quot;k&quot;&gt;***&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;gizmod/CMakeFiles/gizmod.dir/Main.o] Fehler 1
+make[1]: &lt;span class=&quot;k&quot;&gt;***&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;gizmod/CMakeFiles/gizmod.dir/all] Fehler 2
+make: &lt;span class=&quot;k&quot;&gt;***&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;all] Fehler 2&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Still not there! To fix this error, we have to remove line 57 from &lt;i&gt;gizmod-3.5/gizmod/Main.cpp&lt;/i&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-cpp&quot; data-lang=&quot;cpp&quot;&gt;    &lt;span class=&quot;c1&quot;&gt;// set filesystem to native filesystem checking&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// path::default_name_check(native);&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;We call make once again:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;make:
+&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt; 29%] Built target H
+Scanning dependencies of target Gizmod
+&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt; 31%] Building CXX object libGizmod/CMakeFiles/Gizmod.dir/Processes.o
+Linking CXX shared library libGizmod.so
+&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt; 87%] Built target Gizmod
+Scanning dependencies of target gizmod
+&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt; 88%] Building CXX object gizmod/CMakeFiles/gizmod.dir/Main.o
+Linking CXX executable gizmod
+/usr/bin/ld: CMakeFiles/gizmod.dir/GizmoDaemon.o: undefined reference to 
+symbol &lt;span class=&quot;s1&quot;&gt;'_ZN5boost6system15system_categoryEv'&lt;/span&gt;
+//usr/lib/x86_64-linux-gnu/libboost_system.so.1.54.0: error adding symbols: 
+DSO missing from &lt;span class=&quot;nb&quot;&gt;command &lt;/span&gt;line
+collect2: error: ld returned 1 &lt;span class=&quot;nb&quot;&gt;exit &lt;/span&gt;status
+make[2]: &lt;span class=&quot;k&quot;&gt;***&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;gizmod/gizmod] Fehler 1
+make[1]: &lt;span class=&quot;k&quot;&gt;***&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;gizmod/CMakeFiles/gizmod.dir/all] Fehler 2
+make: &lt;span class=&quot;k&quot;&gt;***&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;all] Fehler 2&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;To fix this error add &lt;i&gt;-lboost_system&lt;/i&gt; to the arguments in file &lt;i&gt;/gizmod-3.5/build/gizmod/CMakeFiles/gizmod.dir/link.txt&lt;/i&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;/usr/bin/c++ &lt;span class=&quot;nt&quot;&gt;-O3&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-DNDEBUG&lt;/span&gt; CMakeFiles/gizmod.dir/GizmoDaemon.o 
+CMakeFiles/gizmod.dir/GizmoUtils.o CMakeFiles/gizmod.dir/
+GizmodEventHandlerInterface.o CMakeFiles/gizmod.dir/Main.o 
+&lt;span class=&quot;nt&quot;&gt;-o&lt;/span&gt; gizmod &lt;span class=&quot;nt&quot;&gt;-rdynamic&lt;/span&gt; ../libH/libH.a ../libGizmod/libGizmod.so.3.4.0 
+&lt;span class=&quot;nt&quot;&gt;-lboost_program_options&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-lpython2&lt;/span&gt;.7 ../libH/libH.a &lt;span class=&quot;nt&quot;&gt;-lboost_filesystem&lt;/span&gt; 
+&lt;span class=&quot;nt&quot;&gt;-lboost_system&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-lboost_thread&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-lboost_serialization&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-lboost_python&lt;/span&gt; 
+&lt;span class=&quot;nt&quot;&gt;-lasound&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-lSM&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-lICE&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-lX11&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-lXext&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-lutil&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-lpython2&lt;/span&gt;.7 
+&lt;span class=&quot;nt&quot;&gt;-Wl&lt;/span&gt;,-rpath,/home/user/tmp/gizmod/gizmod-3.5/build/libGizmod:&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;And finally edit the file &lt;i&gt;/gizmod-3.5/libH/FileEventWatcher.cpp&lt;/i&gt; in line 232-236 to fix the 100% CPU usage problem:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-cpp&quot; data-lang=&quot;cpp&quot;&gt;    &lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;WATCH_INOUT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;flags&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;O_RDWR&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;c1&quot;&gt;//events = POLLIN | POLLOUT; // This line causes 100% CPU usage on &lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;newer&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;kernels&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;events&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;POLLIN&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;// | POLLOUT;&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;ModeString&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Read / Write&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;break&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;That’s it, Gizmod should compile and run fine.&lt;/p&gt;
+
+&lt;p&gt;&lt;span itemprop=&quot;author&quot; itemscope=&quot;&quot; itemtype=&quot;https://schema.org/Person&quot;&gt;
+    &lt;meta itemprop=&quot;name&quot; content=&quot;Sebastian Glahn&quot; /&gt;
+    &lt;meta itemprop=&quot;url&quot; content=&quot;http://blog.tldnr.org&quot; /&gt;
+    &lt;meta itemprop=&quot;sameAs&quot; content=&quot;https://twitter.com/sglahn&quot; /&gt;
+    &lt;meta itemprop=&quot;sameAs&quot; content=&quot;https://github.com/sglahn&quot; /&gt;
+    &lt;meta itemprop=&quot;sameAs&quot; content=&quot;https://www.thingiverse.com/sglahn&quot; /&gt;
+    &lt;meta itemprop=&quot;sameAs&quot; content=&quot;https://stackoverflow.com/users/1453205/sglahn&quot; /&gt;
+&lt;/span&gt;&lt;/p&gt;</content><author><name>Sebastian Glahn</name></author><category term="Retro Gaming" /><summary type="html">The Gizmo Daemon is a very powerfull little utility to control applications and devices based on input events. I am using Gizmod to control my DIY Arcade Cabinet with USB Controllers to navigate through the menus and start or stop games. When I updated my Arcade Cabinet with new hardware I found out that Gizmod does not compile on newer Ubuntu versions. It seems like Gizmod is not well maintained at the moment. I'm using the Gizmo Daemon to create input events from USB gamepads</summary></entry><entry><title type="html">Reviving an old N900 without lock code</title><link href="https://blog.tldnr.org/2015/01/10/reviving-an-old-n900-without-lock-code/" rel="alternate" type="text/html" title="Reviving an old N900 without lock code" /><published>2015-01-10T19:00:26+00:00</published><updated>2015-01-10T19:00:26+00:00</updated><id>https://blog.tldnr.org/2015/01/10/reviving-an-old-n900-without-lock-code</id><content type="html" xml:base="https://blog.tldnr.org/2015/01/10/reviving-an-old-n900-without-lock-code/">&lt;p&gt;Since it’s introduction in 2009 the Nokia N900 has always been a very special Smartphone. And when you have forgotten your lock code you will quickly notice this once again. I had an old N900 lying around which I want to use in a project and of course I have forgotten the lock code. Without your lock code the N900 won’t boot and you can not access your phone. To make the phone usable again I had to reflash the N900 with an old version of the firmware, brute force the lock code with a password cracker, reflash it with the newest version of the firmware and activate the community updates.&lt;/p&gt;
+&lt;center&gt;&lt;figure&gt;&lt;img src=&quot;/images/2015/N900.jpg&quot; /&gt;&lt;figcaption&gt;The Nokia N900&lt;/figcaption&gt;&lt;/figure&gt;&lt;/center&gt;
+
+&lt;p&gt;The first question was where can I find the firmeware and the flash tool? Since Nokia is bought by Microsoft and Maemo, the Debian based operating system of the N900, is discontinued everything Maemo related on the Nokia servers is gone (http://tablets-dev.nokia.com/nokia_N900.php), even the unofficial clone of this page (http://skeiron.org/tablets-dev/nokia_N900) is not available anymore. But there is copy of the unofficial clone on archive.org:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://web.archive.org/web/20131117084237/http://skeiron.org/tablets-dev/maemo_dev_env_downloads/&quot;&gt;http://web.archive.org/web/20131117084237/http://skeiron.org/tablets-dev/maemo_dev_env_downloads/&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://web.archive.org/web/20131117073524/http://skeiron.org/tablets-dev/nokia_N900/&quot;&gt;http://web.archive.org/web/20131117073524/http://skeiron.org/tablets-dev/nokia_N900/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;So if you need any of these files you better download them as quick as you can.&lt;/p&gt;
+
+&lt;p&gt;I downloaded the PR1 release of Maemo, the whole process of retrieving the lock code is only possible with the PR1 version of Maemo, I tested the PR1.3 and after a complete flash of the eMMC and rootfs it still asks for the lock code at boottime.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;PR1 Vanilla version of the eMMC content for Nokia N900: &lt;i&gt;RX-51_2009SE_1.2009.41-1.VANILLA_PR_EMMC_MR0_ARM.bin&lt;/i&gt;&lt;/li&gt;
+  &lt;li&gt;the first Maemo 5 Global release for Nokia N900, also called the FIASCO/rootfs image: &lt;i&gt;RX-51_2009SE_1.2009.42-11_PR_COMBINED_MR0_ARM.bin&lt;/i&gt;
+I also downloaded the Maemo Flasher-3.5 Tool, &lt;i&gt;maemo_flasher-3.5_2.5.2.2.tar.gz&lt;/i&gt; and extracted it’s content.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;(Note: I also downloaded the PR1.3 firmware, Nokia’s last official major Maemo 5 update, to flash this version in the last step. The files are called &lt;i&gt;RX-51_2009SE_10.2010.13-2.VANILLA_PR_EMMC_MR0_ARM.bin&lt;/i&gt; and &lt;i&gt;RX-51_2009SE_20.2010.36-2_PR_COMBINED_MR0_ARM.bin&lt;/i&gt;.)&lt;/p&gt;
+
+&lt;p&gt;After I had everything together I started the flash process:&lt;/p&gt;
+&lt;h3 id=&quot;1-charge-the-n900-battery-till-the-led-is-green&quot;&gt;1) Charge the N900 battery till the led is green&lt;/h3&gt;
+
+&lt;h3 id=&quot;2-flash-emmc-image&quot;&gt;2) Flash eMMC image&lt;/h3&gt;
+&lt;p&gt;Execute the flasher tool on your computer:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nb&quot;&gt;sudo&lt;/span&gt; ./flasher-3.5 &lt;span class=&quot;nt&quot;&gt;-F&lt;/span&gt; RX-51_2009SE_1.2009.41-1.VANILLA_PR_EMMC_MR0_ARM.bin &lt;span class=&quot;nt&quot;&gt;-f&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;The output will look like this:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;flasher v2.5.2 &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;Oct 21 2009&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+Image &lt;span class=&quot;s1&quot;&gt;'mmc'&lt;/span&gt;, size 241163 kB
+	Version RX-51_2009SE_1.2009.41-1.VANILLA
+Suitable USB device not found, waiting.&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Plug in the powered down N900 while holding the &lt;i&gt;u&lt;/i&gt; key to activate RD mode. Text similar to the following will be displayed on the computer:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;USB device found found at bus 002, device address 025.
+Found device RX-51, hardware revision 2101
+NOLO version 1.4.14
+Version of &lt;span class=&quot;s1&quot;&gt;'sw-release'&lt;/span&gt;: RX-51_2009SE_20.2010.36-2_PR_MR0
+Booting device into flash mode.
+Suitable USB device not found, waiting.
+USB device found found at bus 002, device address 026.
+Raw data transfer EP found at EP2.
+Image&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;s&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; flashed successfully &lt;span class=&quot;k&quot;&gt;in &lt;/span&gt;32.528 s &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;7413 kB/s&lt;span class=&quot;o&quot;&gt;)!&lt;/span&gt;                    
+USB device found found at bus 002, device address 007.
+Found device RX-51, hardware revision 2101
+NOLO version 1.4.14
+Version of &lt;span class=&quot;s1&quot;&gt;'sw-release'&lt;/span&gt;: RX-51_2009SE_21.2011.38-1_PR_MR0
+Booting device into flash mode.
+Suitable USB device not found, waiting.
+USB device found found at bus 002, device address 008.
+Raw data transfer EP found at EP2.
+Image&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;s&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; flashed successfully &lt;span class=&quot;k&quot;&gt;in &lt;/span&gt;30.533 s &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;8382 kB/s&lt;span class=&quot;o&quot;&gt;)!&lt;/span&gt;   &lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Remove the N900 battery to power it down. The manuals point out that it is not a good idea to boot the device in this state and removing the battery is the fool proof way.&lt;/p&gt;
+
+&lt;h3 id=&quot;3-flash-fiascorootfs&quot;&gt;3) Flash FIASCO/rootfs&lt;/h3&gt;
+&lt;p&gt;Execute the flasher tool again:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nb&quot;&gt;sudo&lt;/span&gt; ./flasher-3.5 &lt;span class=&quot;nt&quot;&gt;-F&lt;/span&gt; RX-51_2009SE_1.2009.42-11_PR_COMBINED_MR0_ARM.bin &lt;span class=&quot;nt&quot;&gt;-f&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-R&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;-R enables a reboot of the N900 after flashing, on the computer:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;flasher v2.5.2 &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;Oct 21 2009&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+SW version &lt;span class=&quot;k&quot;&gt;in &lt;/span&gt;image: RX-51_2009SE_1.2009.42-11_PR_MR0
+Image &lt;span class=&quot;s1&quot;&gt;'kernel'&lt;/span&gt;, size 1700 kB
+	Version 2.6.28-20094102.3+0m5
+Image &lt;span class=&quot;s1&quot;&gt;'rootfs'&lt;/span&gt;, size 149376 kB
+	Version RX-51_2009SE_1.2009.42-11_PR_MR0
+Image &lt;span class=&quot;s1&quot;&gt;'cmt-2nd'&lt;/span&gt;, size 81408 bytes
+	Version 8.2.2009.34.3-2+0m5
+Image &lt;span class=&quot;s1&quot;&gt;'cmt-algo'&lt;/span&gt;, size 519808 bytes
+	Version 8.2.2009.34.3-2+0m5
+Image &lt;span class=&quot;s1&quot;&gt;'cmt-mcusw'&lt;/span&gt;, size 5786 kB
+	Version 8.2.2009.34.3-2+0m5
+Image &lt;span class=&quot;s1&quot;&gt;'2nd'&lt;/span&gt;, size 14720 bytes
+	Valid &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;RX-51: 2217, 2218, 2219, 2220, 2120
+	Version 1.4.13+0m5
+Image &lt;span class=&quot;s1&quot;&gt;'xloader'&lt;/span&gt;, size 14848 bytes
+	Valid &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;RX-51: 2217, 2218, 2219, 2220, 2120
+	Version 1.4.13+0m5
+Image &lt;span class=&quot;s1&quot;&gt;'secondary'&lt;/span&gt;, size 109440 bytes
+	Valid &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;RX-51: 2217, 2218, 2219, 2220, 2120
+	Version 1.4.13+0m5
+Image &lt;span class=&quot;s1&quot;&gt;'2nd'&lt;/span&gt;, size 14720 bytes
+	Valid &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;RX-51: 2101, 2102, 2103
+	Version 1.4.13+0m5
+Image &lt;span class=&quot;s1&quot;&gt;'xloader'&lt;/span&gt;, size 14848 bytes
+	Valid &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;RX-51: 2101, 2102, 2103
+	Version 1.4.13+0m5
+Image &lt;span class=&quot;s1&quot;&gt;'secondary'&lt;/span&gt;, size 109440 bytes
+	Valid &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;RX-51: 2101, 2102, 2103
+	Version 1.4.13+0m5
+Image &lt;span class=&quot;s1&quot;&gt;'2nd'&lt;/span&gt;, size 14720 bytes
+	Valid &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;RX-51: 2104, 2105, 2106, 2107, 2108, 2109, 2110, 2111, 2112, 
+2113, 2114, 2115, 2116, 2117, 2118, 2119
+	Version 1.4.13+0m5
+Image &lt;span class=&quot;s1&quot;&gt;'xloader'&lt;/span&gt;, size 14848 bytes
+	Valid &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;RX-51: 2104, 2105, 2106, 2107, 2108, 2109, 2110, 2111, 2112, 
+2113, 2114, 2115, 2116, 2117, 2118, 2119
+	Version 1.4.13+0m5
+Image &lt;span class=&quot;s1&quot;&gt;'secondary'&lt;/span&gt;, size 109440 bytes
+	Valid &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;RX-51: 2104, 2105, 2106, 2107, 2108, 2109, 2110, 2111, 2112, 
+2113, 2114, 2115, 2116, 2117, 2118, 2119
+	Version 1.4.13+0m5
+Image &lt;span class=&quot;s1&quot;&gt;'2nd'&lt;/span&gt;, size 14720 bytes
+	Valid &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;RX-51: 2201, 2202, 2203, 2204, 2205, 2206, 2207, 2208, 2209, 
+2210, 2211, 2212, 2213, 2214, 2215, 2216
+	Version 1.4.13+0m5
+Image &lt;span class=&quot;s1&quot;&gt;'xloader'&lt;/span&gt;, size 14848 bytes
+	Valid &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;RX-51: 2201, 2202, 2203, 2204, 2205, 2206, 2207, 2208, 2209, 
+2210, 2211, 2212, 2213, 2214, 2215, 2216
+	Version 1.4.13+0m5
+Image &lt;span class=&quot;s1&quot;&gt;'secondary'&lt;/span&gt;, size 109440 bytes
+	Valid &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;RX-51: 2201, 2202, 2203, 2204, 2205, 2206, 2207, 2208, 2209, 
+2210, 2211, 2212, 2213, 2214, 2215, 2216
+	Version 1.4.13+0m5
+Suitable USB device not found, waiting.&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Plug in the powered down N900 while holding ‘u’ key, text similar to the following will be displayed on the computer:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;USB device found found at bus 002, device address 028.
+Found device RX-51, hardware revision 2101
+NOLO version 1.4.14
+Version of &lt;span class=&quot;s1&quot;&gt;'sw-release'&lt;/span&gt;: RX-51_2009SE_20.2010.36-2_PR_MR0
+Sending xloader image &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;14 kB&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;...
+100% &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;14 of 14 kB, avg. 3625 kB/s&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+Sending secondary image &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;106 kB&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;...
+100% &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;106 of 106 kB, avg. 13359 kB/s&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+Flashing bootloader... &lt;span class=&quot;k&quot;&gt;done&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
+Sending cmt-2nd image &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;79 kB&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;...
+100% &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;79 of 79 kB, avg. 11357 kB/s&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+Sending cmt-algo image &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;507 kB&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;...
+100% &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;507 of 507 kB, avg. 21151 kB/s&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+Sending cmt-mcusw image &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;5786 kB&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;...
+100% &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;5786 of 5786 kB, avg. 23616 kB/s&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+Flashing cmt-mcusw... &lt;span class=&quot;k&quot;&gt;done&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
+Sending kernel image &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;1700 kB&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;...
+100% &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;1700 of 1700 kB, avg. 20492 kB/s&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+Flashing kernel... &lt;span class=&quot;k&quot;&gt;done&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
+Sending and flashing rootfs image &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;149376 kB&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;...
+100% &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;149376 of 149376 kB, avg. 13647 kB/s&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+Finishing flashing... &lt;span class=&quot;k&quot;&gt;done
+&lt;/span&gt;CMT flashed successfully&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Remove USB cable, the N900 boots, blinking dots and finally Maemo! However the lock code is still set but the automatic lock at boottime is disabled. This is only possible with the PR1 firmware and was changed in later firmeware versions.&lt;/p&gt;
+
+&lt;h3 id=&quot;4-retrieve-the-old-lock-code&quot;&gt;4) Retrieve the old lock code&lt;/h3&gt;
+&lt;p&gt;To retrieve the lock code I needed to obtain its hash code and brute force it. To achive this you need to activate the &lt;i&gt;Maemo-Extras&lt;/i&gt; repository in the Application Manager:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Navigate to the application menu (tap the title bar)&lt;/li&gt;
+  &lt;li&gt;Select &lt;i&gt;Application catalogs&lt;/i&gt;&lt;/li&gt;
+  &lt;li&gt;Select &lt;i&gt;Maemo Extras&lt;/i&gt;&lt;/li&gt;
+  &lt;li&gt;Uncheck &lt;i&gt;Deactivated&lt;/i&gt;
+I installed the aplication &lt;i&gt;rootsh&lt;/i&gt; to get root privileges by executing &lt;i&gt;sudo gainroot&lt;/i&gt; on the command line.
+After that I activated the repository &lt;i&gt;Extras-devel&lt;/i&gt; in the Application Manager:&lt;/li&gt;
+  &lt;li&gt;Navigate to the application menu (tap the title bar)&lt;/li&gt;
+  &lt;li&gt;Select &lt;i&gt;Application catalogs&lt;/i&gt;&lt;/li&gt;
+  &lt;li&gt;Select &lt;i&gt;New&lt;/i&gt;&lt;/li&gt;
+  &lt;li&gt;Enter a catalog name of &lt;i&gt;Maemo extras-devel&lt;/i&gt;&lt;/li&gt;
+  &lt;li&gt;Enter a web address of &lt;i&gt;http://repository.maemo.org/extras-devel/&lt;/i&gt;&lt;/li&gt;
+  &lt;li&gt;Enter a distribution of &lt;i&gt;fremantle&lt;/i&gt;&lt;/li&gt;
+  &lt;li&gt;Enter components of &lt;i&gt;free non-free&lt;/i&gt;&lt;/li&gt;
+  &lt;li&gt;Select &lt;i&gt;Save&lt;/i&gt;
+to install &lt;i&gt;John The Ripper&lt;/i&gt; the password cracker tool:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;gainroot
+apt-get &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;john&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Extract the hash to the file /home/user/MyDocs/hash&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nb&quot;&gt;echo &lt;/span&gt;root:&lt;span class=&quot;si&quot;&gt;$(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;grep&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-A&lt;/span&gt; 13 lock_code /dev/mtd1|tail &lt;span class=&quot;nt&quot;&gt;-1&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;)&lt;/span&gt;: &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; /home/user/MyDocs/hash&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Now get the key:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;john &lt;span class=&quot;nt&quot;&gt;-i&lt;/span&gt;:digits &lt;span class=&quot;nb&quot;&gt;hash&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;It took the phone only a couple of milliseconds to brute force the 5 digit code. &lt;i&gt;-i:digits&lt;/i&gt; tells the tool to only use numerical digits since the phone only accepts numerical input for the password which speeds up the whole process.
+Now write down the lock code, you will need it later, or change it to the phones default &lt;i&gt;12345&lt;/i&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;5-install-the-latest-offical-maemo-firmware&quot;&gt;5) Install the latest offical Maemo firmware&lt;/h3&gt;
+&lt;p&gt;I followed the same steps as above with the latest PR1.3 release.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Charge battery&lt;/li&gt;
+  &lt;li&gt;Flash eMMC&lt;/li&gt;
+  &lt;li&gt;Flash FIASCO
+When the phone boots it is asking for the lock code again but this time we are prepared! &lt;i&gt;Settings&lt;/i&gt; - &lt;i&gt;About product&lt;/i&gt; shows Version &lt;i&gt;20.2010.36-2&lt;/i&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;6-enable-community-ssu&quot;&gt;6) Enable Community SSU&lt;/h3&gt;
+&lt;p&gt;The Community Seamless Software Update (CSSU) is being developed by the Maemo community as a continuation of, and expansion on, Nokia’s update support. It aims to deliver fixes which would be difficult to deliver through Extras (like core Maemo packages). It won’t, however, bundle software which can (or could) be installed through the Extras repositories. After all these years the community is still alive, the last Maemo update was released 01.01.2015.&lt;/p&gt;
+
+&lt;p&gt;You can add the repository by opening &lt;i&gt;http://repository.maemo.org/community/community-fremantle.install&lt;/i&gt; in the browser on the phone. The Application Manager will launch and ask to install the &lt;i&gt;Community SSU enabler&lt;/i&gt;. After the installation close the Application Manager and tap on the brand new Community SSU icon in the applications menu. The Application Manager will start again and present the &lt;i&gt;Maemo 5 Community SSU Package&lt;/i&gt; ready to install.&lt;/p&gt;
+
+&lt;p&gt;&lt;span itemprop=&quot;author&quot; itemscope=&quot;&quot; itemtype=&quot;https://schema.org/Person&quot;&gt;
+    &lt;meta itemprop=&quot;name&quot; content=&quot;Sebastian Glahn&quot; /&gt;
+    &lt;meta itemprop=&quot;url&quot; content=&quot;http://blog.tldnr.org&quot; /&gt;
+    &lt;meta itemprop=&quot;sameAs&quot; content=&quot;https://twitter.com/sglahn&quot; /&gt;
+    &lt;meta itemprop=&quot;sameAs&quot; content=&quot;https://github.com/sglahn&quot; /&gt;
+    &lt;meta itemprop=&quot;sameAs&quot; content=&quot;https://www.thingiverse.com/sglahn&quot; /&gt;
+    &lt;meta itemprop=&quot;sameAs&quot; content=&quot;https://stackoverflow.com/users/1453205/sglahn&quot; /&gt;
+&lt;/span&gt;&lt;/p&gt;</content><author><name>Sebastian Glahn</name></author><category term="Maemo" /><summary type="html">Since it’s introduction in 2009 the Nokia N900 has always been a very special Smartphone. And when you have forgotten your lock code you will quickly notice this once again. I had an old N900 lying around which I want to use in a project and of course I have forgotten the lock code. Without your lock code the N900 won’t boot and you can not access your phone. To make the phone usable again I had to reflash the N900 with an old version of the firmware, brute force the lock code with a password cracker, reflash it with the newest version of the firmware and activate the community updates. The Nokia N900</summary></entry></feed>
